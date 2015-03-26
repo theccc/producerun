@@ -2,27 +2,27 @@
 en:
   projects:
     reward_fields:
-      edit: edit reward
-      reward: reward
-      info_box: Describe the value of the reward and put a real delivery date forecast
+      edit: edit price option
+      reward: price option
+      info_box: Describe the value of the price option and put a real delivery date forecast
         for the supporters.
       minimum_value: 'value:'
       deliver_at: 'Estimated delivery :'
       description: 'description :'
-      limit_reward: limit reward
+      limit_reward: limit price option
       available: Quantity Available
       submit: save
       index:
-        select_reward: Select this reward
+        select_reward: Select this price option
         display_remaining: "%{remaining} %{maximum} of available"
-        dont_want: I do not want reward
+        dont_want: I do not want price option
         limited: limited
         sold_out: exhausted
         contributions_to_confirm:
           one: 1 support in term of confirmation.
           other: "%{count} support in term of confirmation."
-        edit_reward: edit reward
-        new_reward: Sign reward
+        edit_reward: edit price option
+        new_reward: Sign price option
         reward_deliver_time: "<b>Estimativa delivery: </b> %{estimate}"
         reward_title: For %{minimum} or more
     dashboard_user_settings:
@@ -97,7 +97,7 @@ en:
       basics_tab: basic
       project_tab: campaign
       posts_tab: news
-      rewards_tab: rewards
+      rewards_tab: price options
       about_you_tab: about you
       reports_tab: reports
       account_tab: account
@@ -124,10 +124,10 @@ en:
       name_label: name
       name_hint: Your public name , visible to all as a campaign of the author .
     dashboard_reward:
-      title: Create and edit your rewards here
-      add_reward: Add reward
-      subtitle: This is your show of gratitude to the supporters.
-      reward: reward
+      title: Create and edit your pricing here
+      add_reward: Add price option
+      subtitle: Show what you get for each pricing option.
+      reward: Price option
     dashboard_preview:
       header_subtitle: It's time for feedback !
       header_text: Share the link below with your friends and enjoy the moment to
