@@ -10,32 +10,32 @@ en:
       bank_account: bank details
     attributes:
       project_account:
-        address_city: city
-        address_complement: complement
-        address_neighbourhood: neighborhood
-        address_number: number
-        address_state: state
-        address_street: address
-        address_zip_code: MOBILE
-        cpf: CPF / CNPJ
+        address_city: City
+        address_complement: Complement
+        address_neighbourhood: Neighborhood
+        address_number: Number
+        address_state: State
+        address_street: Address
+        address_zip_code: Zip code
+        cpf: EIN Number
         state_inscription: State Registration
         email: Email
         full_name: Full Name / Company Name
-        phone_number: phone
+        phone_number: Phone
         bank: Bank
         bank_id: Bank
         owner_name: Cardholder Name
-        owner_document: CPF / CNPJ of the holder
-        agency: agency
-        agency_digit: digit agency
+        owner_document: EIN number of the holder
+        agency: Agency
+        agency_digit: Digit agency
         account: Account No.
-        account_digit: digit account
+        account_digit: Digit account
         account_type: Account type
       bank_account:
         bank: Bank
         bank_id: Bank
         owner_name: Cardholder Name
-        owner_document: CPF / CNPJ of the holder
+        owner_document: EIN number of the holder
         agency: agency
         agency_digit: digit agency
         account: Account No.
@@ -43,19 +43,19 @@ en:
       contribution:
         payer_name: Full Name
         payer_email: Email
-        payer_document: CPF or CNPJ
-        country: country
-        address_street: street
-        address_number: number
-        address_complement: complement
-        address_neighbourhood: neighborhood
-        address_state: state
-        address_city: city
-        address_zip_code: MOBILE
-        address_phone_number: phone
-        value: support value
-        reward: reward
-        project: campaign
+        payer_document: EIN Number
+        country: Country
+        address_street: Street
+        address_number: Number
+        address_complement: Complement
+        address_neighbourhood: Neighborhood
+        address_state: State
+        address_city: City
+        address_zip_code: Zip code
+        address_phone_number: Phone
+        value: Support value
+        reward: Reward
+        project: Campaign
       reward:
         deliver_at: Estimated delivery
       project:
@@ -79,17 +79,17 @@ en:
         budget: Campaign budget
         uploaded_image: Design Image
       user:
-        address_city: city
-        address_complement: complement
-        address_neighbourhood: neighborhood
-        address_number: number
-        address_state: state
-        address_street: address
-        address_zip_code: MOBILE
-        cpf: CPF / CNPJ
+        address_city: City
+        address_complement: Complement
+        address_neighbourhood: Neighborhood
+        address_number: Number
+        address_state: State
+        address_street: Address
+        address_zip_code: Zip code
+        cpf: EIN Number
         cpf_hint: "(?)"
         state_inscription: State Registration
-        current_password: current Password
+        current_password: Current Password
         email: Email
         full_name: Full Name / Company Name
         bio: Mini Bio
@@ -131,8 +131,8 @@ en:
             owner_name:
               blank: Holder's name can not be blank
             owner_document:
-              blank: CPF / CNPJ holder can not be blank
-              invalid: CPF / CNPJ invalid
+              blank: EIN holder can not be blank
+              invalid: EIN invalid
             agency:
               blank: Agency can not be blank
               invalid: invalid Agency
@@ -148,7 +148,7 @@ en:
             email:
               blank: User Email can not be blank
             cpf:
-              blank: User CPF can not be blank
+              blank: User EIN can not be blank
             address_street:
               blank: User address can not be blank
             address_number:
@@ -174,9 +174,8 @@ en:
             owner_name:
               blank: User holder's name can not be blank
             owner_document:
-              blank: CPF / CNPJ of the user holder can not be blank
-              not_same: CPF / CNPJ of registration and completed bank details are
-                not equal.
+              blank: EIN of the user holder can not be blank
+              not_same: EIN of registration and completed bank details are not equal.
             account_type:
               blank: Account type can not be blank
         project:
@@ -264,7 +263,7 @@ en:
     neighbourhood: neighborhood
     city: city
     address_state: state
-    zip_code: MOBILE
+    zip_code: Zip code
     anonymous: anonymous
   user:
     no_name: nameless

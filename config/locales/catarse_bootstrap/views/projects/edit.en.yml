@@ -26,9 +26,8 @@ en:
         reward_deliver_time: "<b>Estimativa delivery: </b> %{estimate}"
         reward_title: For %{minimum} or more
     dashboard_user_settings:
-      title: Registration and banking data
-      subtitle_html: With the form below complete, your campaign will be ready to air
-        .
+      title: Registration and banking Payout Details
+      subtitle_html: You need to quickly fill out these details so we can quickly pay you out after a successfull campaign
       user_data_title: Registration data and address
       user_data_subtitle_html: We need the data below for the issuance of Tax Notes
         for successful projects .
