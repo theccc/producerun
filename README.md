@@ -84,7 +84,7 @@ Before contributing, take a look at our Roadmap (https://www.pivotaltracker.com/
 
 Our pivotal is concerned with user visible features using user stories. But we do have some features not visible to users that are planned such as:
 * Turn ProduceRun into a Rails Engine with customizable views.
-* Make a installer script to guide users through initial Catarse configuration.
+* Make a installer script to guide users through initial ProduceRun configuration.
 
 After that, just fork the project, change what you want, and send us a pull request.
 
@@ -96,15 +96,8 @@ After that, just fork the project, change what you want, and send us a pull requ
 * Feel free to add specs to the code that is already in the repository without the proper coverage ;)
 * Regard the existing tests for a style guide, we try to use implicit spec subjects and lazy evaluation as often as we can.
 
-## Credits
-
-Author: William Pattison
-
-Contributors: You know who you are ;) The commit history can help, but the list was getting bigger and pointless to keep in the README.
-
-
 ## License
 
-Copyright (c) 2014 ProduceRun, Inc
+Copyright (c) 2015 ProduceRun, Inc
 
 Licensed under the MIT license (see MIT-LICENSE file)
