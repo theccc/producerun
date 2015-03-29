@@ -1,14 +1,14 @@
-# Catarse [![Build Status](https://img.shields.io/travis/catarse/catarse.svg)](https://travis-ci.org/catarse/catarse) [![Coverage Status](https://img.shields.io/coveralls/catarse/catarse/channels.svg)](https://coveralls.io/r/catarse/catarse) [![Dependency Status](https://img.shields.io/gemnasium/catarse/catarse.svg)](https://gemnasium.com/catarse/catarse) [![Code Climate](https://img.shields.io/codeclimate/github/catarse/catarse.svg)](https://codeclimate.com/github/catarse/catarse)
+# ProduceRun [![Build Status](https://img.shields.io/travis/catarse/catarse.svg)](https://travis-ci.org/catarse/catarse) [![Coverage Status](https://img.shields.io/coveralls/catarse/catarse/channels.svg)](https://coveralls.io/r/catarse/catarse) [![Dependency Status](https://img.shields.io/gemnasium/catarse/catarse.svg)](https://gemnasium.com/catarse/catarse) [![Code Climate](https://img.shields.io/codeclimate/github/catarse/catarse.svg)](https://codeclimate.com/github/catarse/catarse)
 
-The first crowdfunding platform from Brazil
+The first opensource groupbuying platform
 
-## An open source crowdfunding platform for creative projects
+## An open source groupbuying platform for local food.
 
-Welcome to Catarse's source code repository.
-Our goal with opening the source code is to stimulate the creation of a community of developers around a high-quality crowdfunding platform.
+Welcome to ProduceRun's source code repository.
+Our goal with opening the source code is to stimulate the creation of a community of developers around a high-quality groupbuying platform.
 
-You can see the software in action in http://catarse.me.
-The official repo is https://github.com/catarse/catarse
+You can see the software in action in http://www.producerun.com
+The official repo is https://github.com/producerun/produceruncatarse
 
 ## Getting started
 
@@ -28,11 +28,11 @@ To run this project you need to have:
 
 * Clone the project
 
-        $ git clone https://github.com/catarse/catarse.git
+        $ git clone https://github.com/producerun/produceruncatarse.git
 
 * Enter project folder
 
-        $ cd catarse
+        $ cd produceruncatarse
 
 * Create the `database.yml`
 
@@ -60,28 +60,30 @@ Open [http://localhost:3000](http://localhost:3000)
 
 ### Translations
 
-We hope to support a lot of languages in the future.
-So we are willing to accept pull requests with translations to other languages.
-
-Thanks a lot to Daniel Walmsley, from http://purpose.com, for starting the internationalization and beginning the english translation.
+This repo is offered in only english at this stage
 
 ## Payment gateways
 
-Currently, we support MoIP, PayPal and WePay through our payment engines. Payment engines are extensions to Catarse that implement a specific payment gateway logic.
+Currently, we support PayPal through our payment engines. Payment engines are extensions to ProduceRun that implement a specific payment gateway logic.
 The current working engines are:
-* MoIP
 * PayPal
-* WePay
+* 
+Wanted payment gateways engines
+*Braintree
+*Stripe
+*Dwolla
+*Coinbase
 
-If you have created a different payment engine to Catarse please contact us so we can link your engine here.
-If you want to create a payment engine please join our mailing list at http://groups.google.com/group/catarse-dev
+
+If you have created a different payment engine to ProduceRun please contact us so we can link your engine here.
+If you want to create a payment engine please join our mailing list at https://groups.google.com/forum/?hl=en#!forum/groupbuyingdevs
 
 ## How to contribute with code
 
-Before contributing, take a look at our Roadmap (https://www.pivotaltracker.com/projects/427075) and discuss your plans in our mailing list (http://groups.google.com/group/catarse-dev).
+Before contributing, take a look at our Roadmap (https://www.pivotaltracker.com/projects/427075) and discuss your plans in our mailing list (https://groups.google.com/forum/?hl=en#!forum/groupbuyingdevs).
 
 Our pivotal is concerned with user visible features using user stories. But we do have some features not visible to users that are planned such as:
-* Turn Catarse into a Rails Engine with customizable views.
+* Turn ProduceRun into a Rails Engine with customizable views.
 * Make a installer script to guide users through initial Catarse configuration.
 
 After that, just fork the project, change what you want, and send us a pull request.
@@ -96,13 +98,13 @@ After that, just fork the project, change what you want, and send us a pull requ
 
 ## Credits
 
-Author: Daniel Weinmann
+Author: William Pattison
 
 Contributors: You know who you are ;) The commit history can help, but the list was getting bigger and pointless to keep in the README.
 
 
 ## License
 
-Copyright (c) 2011 Softa
+Copyright (c) 2014 ProduceRun, Inc
 
 Licensed under the MIT license (see MIT-LICENSE file)
