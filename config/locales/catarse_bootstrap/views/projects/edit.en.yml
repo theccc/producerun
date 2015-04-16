@@ -7,8 +7,8 @@ en:
       info_box: Describe the value of the price option and put a real delivery date forecast
         for the supporters.
       minimum_value: 'value:'
-      deliver_at: 'Estimated delivery :'
-      description: 'description :'
+      deliver_at: 'Estimated delivery:'
+      description: 'description:'
       limit_reward: limit price option
       available: Quantity Available
       submit: save
@@ -27,13 +27,13 @@ en:
         reward_title: For %{minimum} or more
     dashboard_user_settings:
       title: Registration and banking Payout Details
-      subtitle_html: You need to quickly fill out these details so we can quickly pay you out after a successfull campaign
+      subtitle_html: You need to quickly fill out these details so we can quickly pay you out after a successfull campaign.
       user_data_title: Registration data and address
       user_data_subtitle_html: We need the data below for the issuance of Tax Notes
-        for successful projects .
+        for successful projects.
       account_title: bank details
       account_subtitle_html: We need the data below to make a financial transfer for
-        successful projects .
+        successful projects.
       submit: save
     dashboard_home_templates:
       status: 'Status:'
@@ -43,27 +43,26 @@ en:
         contributions: support
         left: remaining
       waiting_funds:
-        title: "%{name} , we are processing the final payments ."
+        title: "%{name}, we are processing the final payments."
         subtitle_html: His campaign was completed in %{expires} and is awaiting confirmation
           slips and payments.
         header: From here your campaign can hit the target or not.
-        success: 'A meta a :'
-        failed: 'Do not hit the target :'
+        success: 'A meta a:'
+        failed: 'Do not hit the target:'
         good_luck: Good luck!
       successful:
-        title: "%{name} , celebrate you deserve!"
+        title: "%{name}, celebrate you deserve!"
         subtitle_html: His campaign was successful and now is the time to start working
-          relationship with their supporters !
-        header1: 'And do not forget : Transparency is everything.'
-        transparent_html: Keep informed supporter is to maintain a happy supporter
-          .
-        header2: 'Be sure to read :'
+          relationship with their supporters!
+        header1: 'And do not forget: Transparency is everything.'
+        transparent_html: Keep informed supporter is to maintain a happy supporter.
+        header2: 'Be sure to read:'
       rejected:
-        title: "%{name} unfortunately was not this time ."
+        title: "%{name} unfortunately was not this time."
         subtitle_html: You sent your campaign for analysis of ProduceRun and we understand
-          that it is not according to the site profile .
+          that it is not according to the site profile.
       online:
-        title: "%{name} , your campaign is in the air !"
+        title: "%{name}, your campaign is in the air!"
         subtitle_html: Your campaign is in the air and your campaign will end on the
           day 23hs59min59s %{date}. Until that day and time you may receive support.
         explanation_html: "<div class='fontsize-base u-marginbottom-40 card card-terciary'>
@@ -72,24 +71,23 @@ en:
           - your target capture ; 5917355537669011 - the deadline ; 4217621477946343
           - the URL of the project; <br> - the user owner"
       failed:
-        title: "%{name} , do not be discouraged !"
-        subtitle_html: Your campaign does not hit the target and we know that this
-          is not the best of feelings .
-        questions: We also send an email to you with two short questions .
+        title: "%{name}, do not be discouraged!"
+        subtitle_html: Your campaign did not hit the target and we know that this
+          is not the best of feelings.
+        questions: We also sent an email to you with two short questions.
       draft:
-        title: "%{name} , build your campaign !"
-        subtitle: The more careful and well formatted for a campaign , the greater
-          the chances of it being successful in your fundraising campaign.
+        title: "%{name}, build your campaign!"
+        subtitle: The more carefully formatted your campaign is, the greater
+          the chances are your campaign will be successful.
         study_title: Felt need to study more to build your campaign?
       approved:
-        title: "%{name} , your campaign has been approved!"
-        subtitle_html: To place your campaign in the air is only requires you to fill
-          in the required data in tab %{link1}. is important to know that we charge
-          the rate of 13% of the total amount collected only for successful projects
-          .
+        title: "%{name}, your campaign has been approved!"
+        subtitle_html: To place your campaign in the air, fill
+          in the required data in tab %{link1}. It is important to know that we charge
+          the rate of 13% of the total amount collected only for successful projects.
       in_analysis:
-        title: "%{name} , you sent your campaign for analysis and receive our response
-          within 4 working days"
+        title: "%{name}, you sent your campaign for analysis. You will receive our response
+          within 4 working days."
         subtitle_html: Thank you very much!
     edit:
       leave_link_html: ''
@@ -112,24 +110,24 @@ en:
       twitter_hint: Paste the link to your profile
       other_link_label: Presence on the Internet
       other_link_hint: Include links to help supporters to understand why you are
-        the right person to do this project .
+        the right person to do this project.
       about_label: about you
-      about_hint: Use this space if you want to better describe you, your company
-        or your institution .
+      about_hint: Use this space if you want to better describe you, your company,
+        or your institution.
       facebook_link_label: Facebook profile
       facebook_link_hint: Paste the link to your profile
       uploaded_image_label: Profile image
       uploaded_image_hint: This image will be used as the thumbnail of your profile
         ( PNG, JPG ideal size 280 x 280 )
       name_label: name
-      name_hint: Your public name , visible to all as a campaign of the author .
+      name_hint: Your public name, visible to all as a campaign of the author.
     dashboard_reward:
       title: Create and edit your pricing here
       add_reward: Add price option
       subtitle: Show what you get for each pricing option.
       reward: Price option
     dashboard_preview:
-      header_subtitle: It's time for feedback !
+      header_subtitle: It's time for feedback!
       header_text: Share the link below with your friends and enjoy the moment to
         make fine adjustments to help in your campaign.
     dashboard_posts:
@@ -144,38 +142,38 @@ en:
       budget_hint_html: How your funds are used?
       budget_label: Project budget
       budgets_label: Details of the budget
-      start: Tell the story of your campaign !
+      start: Tell the story of your campaign!
       start_subtitle: Think in the campaign narrative.
       video_url: Video URL
-      video_url_hint: Link your video on Vimeo or Youtube .
+      video_url_hint: Link your video on Vimeo or Youtube.
       about: Project Description
       links_title: useful links
-      about_hint_html: Contact with passion and clarity about what will be done .
+      about_hint_html: Contact with passion and clarity about what will be done.
       card: Card design
-      card_subtitle: You know that campaign cardzinho that appears on the home and
-        search ?
+      card_subtitle: You know that campaign card that appears on the home and
+        search?
       image: Design Image
       image_hint: This image will be used as the thumbnail of your campaign ( PNG,
         JPG size 600 x 340 )
       headline: Project call
-      headline_hint: Will be used in the campaign card , along with the above picture
-        ( thumbnail) .
+      headline_hint: Will be used in the campaign card, along with the above picture
+        (thumbnail).
       submit: save
     dashboard_basics:
       project_start: Fill out the information below
-      project_start_subtitle: The data reported in this section may not be modified
-        when the project goes live .
+      project_start_subtitle: The data in this section may not be modified
+        after the project goes live.
       online_date: Data entry no ar
       user_id: User ID
       name: Project Name
       name_label: The more direct the better.
       url: URL design
-      url_label: It is the address of your campaign should be easy to remember .
+      url_label: The address of your campaign. It should be easy to remember.
       category: category
       category_label: Explore and inspire other campaigns in the same category as yours.
       online_days: Deadline for collection
-      online_days_label: You can choose between 1 and 60 days for your campaign .
+      online_days_label: You can choose between 1 and 60 days for your campaign.
       value: Amount to be raised
-      value_secondary: Plan a consistent goal with your campaign proposes .
+      value_secondary: Plan a consistent goal with your campaign proposes.
       form:
         submit: save
