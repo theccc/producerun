@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Braintree Payment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css" rel="stylesheet">
+    <style>
+      body{background-color: #e5e5e5;}
+      div.container { position: relative;}
+      div.row { position: absolute; margin:30px 50px 50px 50px;}
+      div.stripe-field {
+        position:absolute;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="span4">
+          <div class="catarse_braintree_form">
+            <h2>Crowdfunding Payments with Braintree</h2>
+            <p>You've chosen to contribute using a credit card. You may use your Visa, Mastercard or Amex. Credit Card information is not stored on the crowdfunding website, and is safely stored on Braintree's servers.</p>
+            <% i18n_scope = 'projects.contributions.charge.payment_form' %>
+            <%= form_tag pay_braintree_path(params[:id]), id: 'checkout', autocomplete: false do %>
+
+              <% inputs = CatarseBraintree::Request::PaymentMethod::FORM_INPUTS %>
+              <% test_vals = CatarseBraintree::Request::PaymentMethod::TEST_VALS %>
+              <% inputs.each do |input| %>
+                <%= label_tag(input, t(input, scope: i18n_scope)) %>
+                <%= text_field_tag(input, test_vals[input]) %>
+              <% end %>
+
+              <label><%= t(:card_number, scope: i18n_scope) %></label>
+              <input data-braintree-name="number" value="4111111111111111" type="text" />
+
+              <label><%= t(:cvv, scope: i18n_scope) %></label>
+              <input data-braintree-name="cvv" value="123" type="text" />
+
+              <label><%= t(:expiration_date, scope: i18n_scope) %></label>
+              <input data-braintree-name="expiration_date" value="10/20"  type="text"/>
+
+              <% inputs = CatarseBraintree::Request::PaymentMethod::ADDRESS_INPUTS %>
+              <% test_vals = CatarseBraintree::Request::PaymentMethod::TEST_ADDRESS_VALS %>
+              <% inputs.each do |input| %>
+                <label><%= t(input, scope: i18n_scope) %></label>
+                <input data-braintree-name="billing_address[<%= input.to_s %>]" value="<%= test_vals[input]%>" type="text" />
+              <% end %>
+
+              <div>
+                <input type="submit" id="submit" value="Confirm" />
+              </div>
+            <% end %>
+            <script src="https://js.braintreegateway.com/v2/braintree.js"></script>
+            <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/js/bootstrap.min.js"></script>
+            <script>
+              braintree.setup("<%= @client_token %>", "custom", {id: "checkout"});
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

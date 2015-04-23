@@ -110,7 +110,7 @@ class Contribution < ActiveRecord::Base
   end
 
   def self.payment_method_names
-    ['Pagarme', 'PayPal', 'MoIP']
+    ['Braintree']
   end
 
   # Used in payment engines
