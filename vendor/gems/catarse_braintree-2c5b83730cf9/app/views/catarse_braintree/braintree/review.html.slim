@@ -1,0 +1,9 @@
+= javascript_include_tag 'catarse_braintree'
+
+h3= t('projects.backer.review.bt.international.section_title')
+
+#catarse_braintree_form
+  = form_tag charge_braintree_path(params[:id]) do
+    .clearfix
+    .bootstrap-twitter
+      = submit_tag "Charge", :class => 'btn btn-primary btn-large'

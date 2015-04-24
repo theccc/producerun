@@ -41,6 +41,14 @@ GIT
       json
       ya2yaml
 
+PATH
+  remote: vendor/gems/catarse_braintree-2c5b83730cf9
+  specs:
+    catarse_braintree (0.0.1)
+      braintree
+      rails (~> 4.0)
+      slim-rails
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -97,6 +105,8 @@ GEM
       rack (>= 0.9.0)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    braintree (2.42.0)
+      builder (>= 2.0.0)
     browser (0.8.0)
     builder (3.2.2)
     capybara (2.2.1)
@@ -110,22 +120,10 @@ GEM
       activesupport (>= 3.2.0)
       json (>= 1.7)
       mime-types (>= 1.16)
-    catarse_moip (3.1.0)
-      enumerate_it
-      httparty
-      libxml-ruby (~> 2.6.0)
-      rails (~> 4.0)
     catarse_monkeymail (0.1.6)
       mailchimp-api (~> 2.0.4)
       rails (>= 4.0.3)
       rails-observers
-    catarse_pagarme (2.4.7)
-      pagarme (~> 1.9.8)
-      rails (~> 4.0)
-    catarse_paypal_express (3.0.2)
-      activemerchant (>= 1.34.0)
-      rails (~> 4.0)
-      slim-rails
     catarse_settings_db (0.1.0)
       rails (~> 4.1.1)
     celluloid (0.16.0)
@@ -189,8 +187,6 @@ GEM
       activemodel (>= 3.0)
       activesupport (>= 3.0)
       request_store (~> 1.0)
-    enumerate_it (1.2.4)
-      activesupport (>= 3.0.0)
     erubis (2.7.0)
     eventmachine (1.0.7)
     exception_notification (4.0.1)
@@ -337,7 +333,6 @@ GEM
       addressable (~> 2.3)
     letter_opener (1.3.0)
       launchy (~> 2.2)
-    libxml-ruby (2.6.0)
     loofah (2.0.1)
       nokogiri (>= 1.5.9)
     mail (2.6.3)
@@ -394,9 +389,6 @@ GEM
       multi_json (~> 1.3)
       omniauth-oauth (~> 1.0)
     orm_adapter (0.5.0)
-    pagarme (1.9.9)
-      multi_json
-      rest-client
     pg (0.17.1)
     pg_search (0.7.9)
       activerecord (>= 3.1)
@@ -608,11 +600,9 @@ DEPENDENCIES
   capybara (~> 2.2.0)
   carrierwave (~> 0.10.0)
   catarse_api!
+  catarse_braintree!
   catarse_contribution_validator!
-  catarse_moip (~> 3.1.0)
   catarse_monkeymail (>= 0.1.6)
-  catarse_pagarme (= 2.4.7)
-  catarse_paypal_express (= 3.0.2)
   catarse_settings_db (>= 0.1.0)
   chartkick
   cocoon

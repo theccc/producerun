@@ -63,15 +63,15 @@
             .fontsize-large.fontweight-semibold.text-success-small-only= t('.choose_payment')
             .fontcolor-secondary.fontweight-semibold.fontsize-smallest.fontcolor-secondary
               span.fa.fa-lock
-              |&nbsp;&nbsp;&nbsp;  
+              |&nbsp;&nbsp;&nbsp;
               = t('.choose_payment_subtitle')
-          #payment-methods.nav-light.u-marginbottom-30[class=(avaiable_payment_engines.size == 1 ? 'w-hidden' : '')]
+          #payment-methods.nav-light.u-marginbottom-30[class=(avaiable_payment_engines.size == 1 ? '' : '')]
             - avaiable_payment_engines.each do |engine|
-              .nav-tab.nav-tab-light[id=engine.name data-target="##{engine.name}_payment"]
-                = t("projects.contributions.review.#{engine.name}")
+              .nav-tab.nav-tab-light[id=engine[:name] data-target="##{engine[:name]}_payment"]
+                = t("projects.contributions.review.#{engine[:name]}")
           .tab_content_container
             - avaiable_payment_engines.each do |engine|
-              div[id="#{engine.name}_payment" class="payments_type hide" data-path=engine.review_path(@contribution) ]
+              div[id="#{engine[:name]}_payment" class="payments_type hide" data-path=catarse_braintree.review_braintree_path]
                 .results
                   .tab-loader.loader.u-text-center.w-col.w-col-12.u-marginbottom-30 = image_tag "catarse_bootstrap/loader.gif"
       .w-col.w-col-4

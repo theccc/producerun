@@ -17,10 +17,11 @@ Catarse::Application.routes.draw do
 
   filter :locale, exclude: /\/auth\//
 
-  mount CatarsePaypalExpress::Engine => "/", as: :catarse_paypal_express
-  mount CatarseMoip::Engine => "/", as: :catarse_moip
-  mount CatarsePagarme::Engine => "/", as: :catarse_pagarme
+  #mount CatarsePaypalExpress::Engine => "/", as: :catarse_paypal_express
+  #mount CatarseMoip::Engine => "/", as: :catarse_moip
+  #mount CatarsePagarme::Engine => "/", as: :catarse_pagarme
   mount CatarseApi::Engine => "/api", as: :catarse_api
+  mount CatarseBraintree::Engine => "/", as: :catarse_braintree
 #  mount CatarseWepay::Engine => "/", as: :catarse_wepay
 
   get '/post_preview' => 'post_preview#show', as: :post_preview
