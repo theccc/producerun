@@ -15,7 +15,7 @@ module CatarseBraintree
       check_default_configurations!
       Rails.logger.debug @configuration[:braintree_merchant_id]
       Braintree::Configuration.environment = !!@configuration[:braintree_test] ? :sandbox : :production
-      Braintree::Configuration.merchant_id = @configuration[:braintree_merchant_id]
+      Braintree::Configuration.merchant_id = "5thmz3853jfktm9s"
       Braintree::Configuration.public_key  = @configuration[:braintree_public_key]
       Braintree::Configuration.private_key = @configuration[:braintree_private_key]
       self
