@@ -15,7 +15,7 @@ module CatarseBraintree
 
         def backers
           puts @project.class
-          @project.backers.where(state: 'confirmed')
+          @project.contributions.where(state: 'confirmed')
         end
 
         def each_backer(&block)
@@ -30,4 +30,3 @@ module CatarseBraintree
     end
   end
 end
-
