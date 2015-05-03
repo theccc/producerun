@@ -14,10 +14,10 @@ module CatarseBraintree
     def setup_gateway
       check_default_configurations!
       Rails.logger.debug @configuration[:braintree_merchant_id]
-      Braintree::Configuration.environment = !!@configuration[:braintree_test] ? :sandbox : :production
-      Braintree::Configuration.merchant_id = @configuration[:braintree_merchant_id]
-      Braintree::Configuration.public_key  = @configuration[:braintree_public_key]
-      Braintree::Configuration.private_key = @configuration[:braintree_private_key]
+      Braintree::Configuration.environment = :production
+      Braintree::Configuration.merchant_id = ENV['merchant_id']
+      Braintree::Configuration.public_key  = ENV['braintree_public_key']
+      Braintree::Configuration.private_key = ENV['braintree_private_key']
       self
     end
 
