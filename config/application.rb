@@ -57,7 +57,7 @@ module Catarse
       config.middleware.use ExceptionNotification::Rack,
         :email => {
           :sender_address => %{"Info" <info+system@producerun.com>},
-          :exception_recipients => "kulakajak@gmail.com,info+system@producerun.com",
+          :exception_recipients => "info+system@producerun.com",
           :delivery_method => :smtp,
         }
     end
