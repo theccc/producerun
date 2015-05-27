@@ -78,14 +78,14 @@ en:
           %{link} happen.
       new:
         page-title: Support the %{name}
-        title: Oohh yeah !
+        title: So many choices almost there!
         you_have_credits: You have <strong>%{credits}</strong> in credits to make
           this support.
-        choose_reward: Choose the reward and then the value of support
+        choose_reward: Pricing
         choose_value: Enter the amount of your support.
         minimum_disclaimer: From $ <span id="minimum-value">10</span> is great ;)
         next_step: Review and make pagamento
-        no_reward: Thank U.
+        no_reward: Cheque, Cash and EBT/SNAP. Please manage farmer
       review:
         PayPal: PayPal
         MoIP: MoIP

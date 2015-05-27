@@ -14,7 +14,7 @@ en:
     index:
       select_reward: Select this reward
       display_remaining: "%{remaining} %{maximum} of available"
-      dont_want: I do not want reward
+      dont_want: Pay on delivery
       limited: limited
       sold_out: exhausted
       contributions_to_confirm:
