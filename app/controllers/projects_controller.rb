@@ -1,5 +1,6 @@
 # coding: utf-8
 class ProjectsController < ApplicationController
+  include ProjectsHelper
   after_filter :verify_authorized, except: %i[index video video_embed embed embed_panel about_mobile]
   after_filter :redirect_user_back_after_login, only: %i[index show]
   before_action :authorize_and_build_resources, only: %i[edit show]

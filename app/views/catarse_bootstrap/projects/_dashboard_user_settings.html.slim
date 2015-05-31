@@ -55,7 +55,7 @@
                   input_html: { class: 'positive', required: true }
               .w-row
                 .w-col.w-col-6.w-sub-col
-                  = form.input :address_state, as: :select, collection: State.array, class: 'w-select positive', 
+                  = form.input :address_state, as: :select, collection: us_states, class: 'w-select positive', 
                   input_html: { class: 'positive', required: true }
                 .w-col.w-col-6
                   .w-row

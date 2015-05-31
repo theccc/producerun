@@ -6,7 +6,6 @@ module Concerns
       rescue_from ActionController::RoutingError, with: :render_404
       rescue_from ActionController::UnknownController, with: :render_404
       rescue_from ActiveRecord::RecordNotFound, with: :render_404
-
       rescue_from Pundit::NotAuthorizedError, with: :auth_error
     end
 
