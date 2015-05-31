@@ -12,9 +12,7 @@ en:
   sending: Sending ...
   share_my_contributions: Check out the campaign
   site:
-    description: The ProduceRun is a different tool - and collaborative - to take their
-      part of the project !
-    keywords: ProduceRun , crowdfunding , collective financing , design, community
-      , open source
+    description: The ProduceRun is a different tool - and collaborative - to take their part of the project !
+    keywords: ProduceRun , crowdfunding , collective financing , design, community, fresh, food, farm, farmers, open source
     meta_title: "%{title} * %{company_name}"
-    title: Most collective financing community in Brazil !
+    title: ProduceRun - Buy Fresh Food Directly From Farm
