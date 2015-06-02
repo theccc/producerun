@@ -83,7 +83,7 @@ en:
           this support.
         choose_reward: Pricing
         choose_value: Enter the amount of your support.
-        minimum_disclaimer: From $ <span id="minimum-value">10</span> is great ;)
+        minimum_disclaimer: From $ <span id="minimum-value">1</span> is great ;)
         next_step: Review and make pagamento
         no_reward: Cheque, Cash and EBT/SNAP. Please manage farmer
       review:
