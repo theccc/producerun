@@ -26,7 +26,7 @@ en:
         contribution_date: Support Date
         current_credits_html: Your current balance is <span id="current_credits">%{credits}</span>
           credits.
-        important_html: For all operating rules for reimbursement, <a href='http://suporte.catarse.me/hc/pt-br/articles/202365507-Regras-e-funcionamento-dos-reembolsos-estornos'
+        important_html: For all operating rules for reimbursement, <a href='http://support.producerun.com'
           target='_blank'>clique aqui2958884982019787 .
         project: campaign
         refunded: Confirmed request.
@@ -84,7 +84,7 @@ en:
       projects:
         here: here
         no_projects: "%{name} not yet any campaign on ProduceRun ."
-        no_projects_current_user_html: You have not started any campaign on ProduceRun
+        no_projects_current_user_html: You haven't started any campaigns on ProduceRun yet.
           .
         title: "%{name} campaigns"
         title_current_user: my Projects
@@ -115,4 +115,4 @@ en:
         active_projects: Active projects
         funded_projects: Projects funded
         not_funded_projects: Projects not funded
-        no_contribuitions: You did not support any project yet with us...
+        no_contribuitions: You haven't bought from a ProduceRun Campaign Yet, its not to late, start today...
