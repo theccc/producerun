@@ -4,15 +4,15 @@ en:
     collections:
       project:
         traffic_sources:
-          one: I 've had another campaign in ProduceRun
+          one: I've had another campaign in ProduceRun
           two: indication of a person who has had a campaign in ProduceRun
           three: indication friend / colleague / professional contact
           four: from a campaign that was picking up on the platform
           five: article in a blog
-          six: a story in the press ( news portal on the internet, TV, newspaper,
+          six: a story in the press ( news portal on the Internet, TV, newspaper,
             magazine )
           seven: in a class / course / lecture / event
-          eight: I did an internet search on collective funding / alternative forms
+          eight: I did an Internet search on collective funding / alternative forms
             of funding
           nine: other
     validation_texts:
@@ -22,8 +22,8 @@ en:
       bank_account:
         bank_id: Select a bank
         agency: What is the agency's number?
-        account: What is the account number ?
-        account_digit: What is the check digit ?
+        account: What is the account number?
+        account_digit: What is the check digit?
         owner_name: Enter a name with a minimum of 5 and a maximum of 30 letters
         owner_document: Enter a CPF or CNPJ valid for the account holder
       contribution:
@@ -40,19 +40,19 @@ en:
       project:
         category: Select a category
         select: Select an option
-        traffic_sources: How did you meet ProduceRun ?
+        traffic_sources: How did you meet ProduceRun?
     hints:
       project:
         select: Select an option
-        traffic_sources: How did you meet ProduceRun ?
-        name: Give a name that people will remember easily.
-        permalink: Prefer something simple, straightforward and well identify your
+        traffic_sources: How did you meet ProduceRun?
+        name: Give a name that people will easily remember.
+        permalink: Prefer something simple, straightforward, and well identifies your
           project.
         category: Choose the most appropriate to your campaign.
-        goal: Plan a consistent goal with your campaign proposes .
-        online_days: You can choose between 1 and 60 days for your campaign .
-        video_url: Link your video on Vimeo or Youtube <br/> .
-        about: Share with public what makes your farm the best, your farm practises and whats special about your goods and why they should buy from you.
-        headline: Phrase in the campaign card to call supporters.
+        goal: Plan a consistent goal with your campaign proposes.
+        online_days: You can choose between 1 and 60 days for your campaign.
+        video_url: Link your video on Vimeo or Youtube.<br/>
+        about: Share with public what makes your farm the best. Share your farm practises. What's special about your goods and why they should buy from you?
+        headline: Phrase in the campaign card to catch supporters attention.
         uploaded_image: This image will be used as the thumbnail of your campaign (
           PNG, JPG size 600 x 340 )

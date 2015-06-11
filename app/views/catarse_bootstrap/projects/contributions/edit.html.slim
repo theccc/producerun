@@ -12,8 +12,10 @@
           = form.input :id, as: :hidden, label: false
           = form.input :project_id, as: :hidden, label: false
           .u-marginbottom-30.u-text-center-small-only
+
             .fontsize-large.fontweight-semibold.lineheight-tight.text-success-small-only Complete and review the data for payment
-            .w-hidden-tiny.fontsize-small These data are reported to the project director
+            .w-hidden-tiny.fontsize-small This data is reported to the project director
+
           #error-message.card.card-error.u-radius.zindex-10.u-marginbottom-30.w-hidden
             .fontsize-smaller.fontweight-bold.u-marginbottom-10= t('.review_errors_title')
             .fontsize-smaller = t('.review_errors')
