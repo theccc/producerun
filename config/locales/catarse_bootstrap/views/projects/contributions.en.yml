@@ -82,10 +82,10 @@ en:
         you_have_credits: You have <strong>%{credits}</strong> in credits to make
           this support.
         choose_reward: Pricing
-        choose_value: Enter the amount of your support.
-        minimum_disclaimer: From $<span id="minimum-value">1</span> is great ;)
+        choose_value: Please enter the amount you would like to buy.
+        minimum_disclaimer: From $<span id="minimum-value">1</span>
         next_step: Review and make payment
-        no_reward: Check, Cash and EBT/SNAP. Please manage farmer
+        no_reward: Check and Cash 
       review:
         PayPal: PayPal
         MoIP: MoIP
