@@ -4,20 +4,21 @@ en:
     collections:
       project:
         traffic_sources:
-          one: I've had another campaign in ProduceRun
-          two: indication of a person who has had a campaign in ProduceRun
-          three: indication friend / colleague / professional contact
+          one: I've run a ProduceRun campaign before.
+          two: someone who has run a campaign in ProduceRun told me
+          three: A friend / colleague / professional contact referred me.
           four: from a campaign that was picking up on the platform
           five: article in a blog
-          six: a story in the press ( news portal on the Internet, TV, newspaper,
-            magazine )
-          seven: in a class / course / lecture / event
-          eight: I did an Internet search on collective funding / alternative forms
-            of funding
-          nine: other
+          six: Did you see a story in the press ( news portal on the Internet, TV, newspaper,
+            magazine? )
+          seven: Heard about it in a class / course / lecture / event.
+          eight: Manage My Market Referred me.
+          nine: My Farmers Market Organisers referred me.
+          ten: I did a search on the internet and found ProduceRun.
+          other: 
     validation_texts:
       reward:
-        minimum_value: Enter a minimum value greater than or equal to 10
+        minimum_value: Enter a minimum value greater than or equal to 0
         description: Enter a description for the reward
       bank_account:
         bank_id: Select a bank
