@@ -8,7 +8,7 @@ Welcome to ProduceRun's source code repository.
 Our goal with opening the source code is to stimulate the creation of a community of developers around a high-quality groupbuying platform.
 
 You can see the software in action in http://www.producerun.com
-The official repo is https://github.com/producerun/produceruncatarse
+The official repo is https://github.com/producerun/producerun
 
 ## Getting started
 
@@ -28,11 +28,11 @@ To run this project you need to have:
 
 * Clone the project
 
-        $ git clone https://github.com/producerun/produceruncatarse.git
+        $ git clone https://github.com/producerun/producerun.git
 
 * Enter project folder
 
-        $ cd produceruncatarse
+        $ cd producerun
 
 * Create the `database.yml`
 
@@ -66,13 +66,12 @@ This repo is offered in only english at this stage
 
 Currently, we support PayPal through our payment engines. Payment engines are extensions to ProduceRun that implement a specific payment gateway logic.
 The current working engines are:
-* PayPal
+* Braintree
 * 
 Wanted payment gateways engines
-*Braintree
-*Stripe
-*Dwolla
-*Coinbase
+*Paypal Express
+*Dwolla for free transactions
+*Coinbase for bitcoin
 
 
 If you have created a different payment engine to ProduceRun please contact us so we can link your engine here.
