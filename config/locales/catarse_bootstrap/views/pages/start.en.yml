@@ -2,28 +2,29 @@
 en:
   pages:
     start:
-      page-title: As the ProduceRun work?
-      title: Finance your campaign collectively
+      page-title: Start a ProduceRun Campaign?
+      title: Start Pre-Selling Your Food To Your Community!
       submit: Start your campaign
       learn-more: Learn more
       header:
-        people: People have supported at least 01 campaign in ProduceRun
-        success: Projects have been funded ProduceRun
-        money: "Has been sold on ProduceRun"
+        people: Communities of people have supported at least 348 successful campaigns on ProduceRun
+        success: 100 Preselling campaigns have been funded ProduceRun
+        money: "$11,231 has been sold on ProduceRun"
       start:
-        title: Start your campaign
-        content: It is important to start somewhere .
+        title: Start your Pre-selling ProduceRun campaign
+        content: list your farm goods, pictures/video , details about the product and the pricing.
+        You can drop off anywhere, at your farmers market stand, local food hubs and workplaces.
         link: Learn more about the first steps of a campaign
       people:
-        title: "Reach out to your network"
-        content: Produce your campaign with care and on time.
+        title: "Publish To Our Marketplace and Share With Your Own Network"
+        content: Our Technology derisk your business by arrigaiating your buyers and pre-sell your goods before even you leave the farm.
         link: Learn how many supporters you will need to mobilize
       work:
         title: It's All or Nothing
-        content: Who sets the goal of fundraising and campaign time is you .
-        link: Receive successful campaigns advice on Catarse
+        content: You can't afford to sell just one carrot, that's why you set your minimum amount that you need to cover your costs first and derisk your business.
+        link: Receive successful campaigns advice on ProduceRun.
       time:
-        title: mobilize supporters
-        content: Communicate well during his campaign and well treat your supporters
+        title: Easily Communicate with your supporters and deliver to them
+        content: Your campaign has been successful, payments have been collected and you deliver to your supporters.
           !
         link: Learn how our rate helps keep ProduceRun
