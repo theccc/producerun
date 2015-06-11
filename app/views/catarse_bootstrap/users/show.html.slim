@@ -14,7 +14,7 @@
         .fontsize-largest.fontweight-semibold.u-marginbottom-20
           = resource.decorate.display_name
         .w-hidden-small.w-hidden-tiny.u-marginbottom-40.fontsize-base
-          | Came together in #{localize(resource.created_at, format: "%B of %Y")}
+          | Joined in #{localize(resource.created_at, format: "%B of %Y")}
           br
           | Supported #{projects_to_show.count} campaigns and has created #{resource.created_projects.count} campaigns&nbsp;
       .w-col.w-col-3
