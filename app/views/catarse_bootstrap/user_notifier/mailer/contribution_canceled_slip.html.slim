@@ -2,15 +2,15 @@
 - company_name = CatarseSettings[:company_name]
 - contact_email = CatarseSettings[:email_contact]
 
-|Olá, <strong>#{contribution.user.display_name}</strong>!
+|Hello, <strong>#{contribution.user.display_name}</strong>!
 br
 br
-| Não recebemos a confirmação de pagamento do boleto gerado para o projeto #{link_to contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink, ref: 'notificacao_cancelado')}.
+| We have not received the payment confirmation slip generated for the project #{link_to contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink, ref: 'notificacao_cancelado')}.
 br
 br
-| Caso você ainda tenha interesse em apoiar o projeto, podemos alterar a data de vencimento para você. Para isso, basta entrar em contato conosco respondendo a esta mensagem ou através do e-mail #{mail_to contact_email}
+| If you still have interest in supporting the campaign, we can change the due date for you. Simply contact us responding to this message or by e-mail #{mail_to contact_email}
 br
 br
-|Um abraço,
+|Thanks,
 br
 | #{company_name}
