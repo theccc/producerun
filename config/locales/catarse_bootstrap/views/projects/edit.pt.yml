@@ -3,7 +3,7 @@ pt:
     reward_fields:
       edit: "Edit Pricing"
       reward: Pricing
-      info_box: "Describe the value of the pricing and put the actual delivery date forecast for the supporters. You can Also limit the pricing and- When the limit is Reached it appears the EXHAUSTED. If you want to change the order que the pricing Appear in your campaign, just do it by dragging up or down Them."
+      info_box: "Describe the value of the pricing and put the actual delivery date forecast for the supporters. You can also limit the pricing and- When the limit is Reached it appears the EXHAUSTED. If you want to change the order que the pricing Appear in your campaign, just do it by dragging up or down Them."
       minimum_value: "Value:"
       deliver_at: "Estimated delivery:"
       description: "description:"
@@ -12,7 +12,7 @@ pt:
       submit: "Save"
       index:
         select_reward: "Select this pricing"
-        display_remaining: "%{remaining} de %{maximum} disponíveis"
+        display_remaining: "%{remaining} de %{maximum} available"
         dont_want: "I do not want reward"
         limited: Limited
         sold_out: Sold Out
@@ -69,7 +69,7 @@ pt:
                         Need more information about campaign process? See the box next to.
                       </p>
                       <p>
-                        A pequisa&nbsp;%{link1} This is a good source of information; % {link2} which can be inspiring. There you will find successful campaign stories and tips.
+                        The Search&nbsp;%{link1} This is a good source of information; % {link2} which can be inspiring. There you will find successful campaign stories and tips.
                       </p>
                     </div>
 "
