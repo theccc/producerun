@@ -52,7 +52,7 @@ pt:
         transparent_html: "Keep informed your customer so they are happy with your service and continue supporting you. Even if you have a setback. To Contact Customers, goto the the News tab, you can write there and email all your customers in one message. Change of Drop off location? Tab \ "reports \" you can download the customers information so you can easier contact and deliver your campaign's products."
         header2: "Be sure to read:"
       rejected:
-        title: "%{name}, unfortunately you wern't successful this time."
+        title: "%{name}, unfortunately you weren't successful this time."
         subtitle_html: "You sent your campaign for review to ProduceRun and we had a few corrections that need to be corrected first. Having a declined campaign does not prevent you to send new campaigns for assessment or rephrase your current campaign. Talk to us at info@producerun if you have further questions! We recommend that you take a good look at the %{link1}  e no %{link2}."
       online:
         title: "%{name}, your campaign is published online!"
