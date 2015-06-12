@@ -1,19 +1,19 @@
 pt:
   projects:
     reward_fields:
-      edit: "Editar recompensa"
-      reward: Recompensa
-      info_box: "Descreva o valor da recompensa e coloque uma previsão de data de entrega real para os apoiadores. Você também pode limitar uma recompensa e quando o limite é atingido ela aparece como ESGOTADA. Se quiser mudar a ordem que as recompensas aparecem em seu projeto, basta fazer isso arrastando-as para cima ou para baixo."
-      minimum_value: "Valor:"
-      deliver_at: "Previsão de entrega:"
-      description: "Descrição:"
-      limit_reward: "Limitar recompensa"
-      available: "Quantidade disponível"
-      submit: "Salvar"
+      edit: "Edit Pricing"
+      reward: Pricing
+      info_box: "Describe the value of the pricing and put the actual delivery date forecast for the supporters. You can Also limit the pricing and- When the limit is Reached it appears the EXHAUSTED. If you want to change the order que the pricing Appear in your campaign, just do it by dragging up or down Them."
+      minimum_value: "Value:"
+      deliver_at: "Estimated delivery:"
+      description: "description:"
+      limit_reward: "limit reward"
+      available: "Quantity available"
+      submit: "Save"
       index:
-        select_reward: "Selecione essa recompensa"
+        select_reward: "Select this pricing"
         display_remaining: "%{remaining} de %{maximum} disponíveis"
-        dont_want: "Não quero recompensa"
+        dont_want: "I do not want reward"
         limited: Limited
         sold_out: Sold Out
         contributions_to_confirm:
@@ -29,7 +29,7 @@ pt:
        user_data_title: "Registration date and address"
        user_data_subtitle_html: "We need your tax details for successful payout producerun campaigns. <b> ATTENTION: Tax details listed in the registration information and bank details must be the same.</b>"
        account_title: "Bank Details"
-       account_subtitle_html: "We need the below to make a financial transfer date for successful projects. <b>ATENÇÃO: The tax details listed in the registration information and bank details must be the same.</b>"
+       account_subtitle_html: "We need the below to make a financial transfer date for successful projects. <b>CAUTION: The tax details listed in the registration information and bank details must be the same.</b>"
        submit: "Save"
     dashboard_home_templates:
       status: "Status:"
