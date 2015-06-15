@@ -1,24 +1,24 @@
-- contribution = @notification.contribution
+- contribution = @ notification.contribution
 
-|Olá, <strong>#{contribution.user.display_name}</strong>!
+| Hello, < strong > # { contribution.user.display_name } </ strong >
 br
 br
-' Verificamos que você iniciou um apoio para o projeto #{link_to contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink, ref: 'notificacao_pending')},
-|porém não chegou a concluí-lo.
+'We found that you have started buying from this ProduceRun Campaign # { link_to contribution.project.name, project_by_slug_url (permalink: contribution.project.permalink, ref: 'notificacao_pending') } ,
+| But didn't to complete it.
 br
 br
-| O seu apoio é essencial e você pode juntar-se a outras #{contribution.project.total_contributions} pessoas para tornar esse projeto uma realidade.
+| Your support is essential and you can join the other # { contribution.project.total_contributions } people to make this run happen.
 br
 br
-| #{ link_to "Você tem até #{l(contribution.project.expires_at)} para realizar sua contribuição de onde parou.", edit_project_contribution_url(project_id: contribution.project.id, id: contribution.id, ref: 'notification_pending') }
+| # { link_to "You have to # {l (contribution.project.expires_at) } to make a purchase where you left off. "edit_project_contribution_url (project_id: contribution.project.id, id: contribution.id, ref: 'notification_pending' )}
 br
 br
-| Caso o motivo para não ter concluído seu apoio foi algum problema técnico, recomendamos tentar novamente utilizando outro navegador.
+| If the reason you didn' t complete your purchase was because of a technical problem, we recommend try again using different web browser.
 br
 br
-| Se o problema persistir, entre em contato imediatamente respondendo a esta mensagem ou através do e-mail #{mail_to CatarseSettings[:email_contact]}
+| If the problem persists, please contact us immediately replying to this message or by e-mail # { mail_to CatarseSettings [: email_contact] }
 br
 br
-|Um abraço,
+| Thanks again,
 br
-|#{CatarseSettings[:company_name]}
+| # { CatarseSettings [: company_name] }
