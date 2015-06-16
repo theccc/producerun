@@ -196,6 +196,7 @@ en:
       estimate: "%B/%Y"
       default: ! '%a, %d %b %Y %H:%M:%S %z'
       long: ! '%B %d, %Y %H:%M'
+      simple: "%d/%m/%Y, %H:%M h"
       short: ! '%d %b %H:%M'
       posts: "%d %b %Y"
     pm: pm
