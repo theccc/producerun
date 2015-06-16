@@ -49,7 +49,7 @@ pt:
         title: "%{name}, Congratulations"
         subtitle_html: "Your campaign was successful and now it is time to commucaite with your campaign backers! It is very important that you deliver your high quality product as promised on time. Deliver! Be sure to look at the post-campaign section %{link1} and learn about what you need to do. %{link2}. "
         header1: "And do not forget: Transparency is everything."
-        transparent_html: "Keep informed your customer so they are happy with your service and continue supporting you. Even if you have a setback. To Contact Customers, goto the the News tab, you can write there and email all your customers in one message. Change of Drop off location? Tab \ "reports \" you can download the customers information so you can easier contact and deliver your campaign's products."
+        transparent_html: "Keep informed your customer so they are happy with your service and continue supporting you. Even if you have a setback. To Contact Customers, goto the the News tab, you can write there and email all your customers in one message. Change of Drop off location? Tab  \"reports \" you can download the customers information so you can easier contact and deliver your campaign's products."
         header2: "Be sure to read:"
       rejected:
         title: "%{name}, unfortunately you weren't successful this time."
