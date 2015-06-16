@@ -152,7 +152,7 @@ pt:
       submit: 'Save'
     dashboard_basics:
       project_start: 'Fill out the information below'
-      project_start_subtitle: 'The data reported in this section can't be modified once the campaign published. Fill out carefully and review before launching the campaign. '
+      project_start_subtitle: 'The data reported in this section cant be modified once the campaign published. Fill out carefully and review before launching the campaign. '
       online_date: 'When published online'
       user_id: 'User ID'
       name: 'Campaign Name'
