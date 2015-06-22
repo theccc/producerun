@@ -1,11 +1,11 @@
 - user = @notification.user
-|Olá, <strong>#{user.display_name}</strong> !
+|Hello, <strong>#{user.display_name}</strong> !
 br
 br
-|Vimos aqui que você tem  R$ #{user.credits} em créditos no Catarse. Que tal aproveitar e apoiar outro projeto bacana agora mesmo?
+|We saw here that you have  $ #{user.credits} in credits on ProduceRun. How about enjoy yourself and buy into a ProduceRun campaign coming to town?
 br
 br
-|Abaixo selecionamos algumas sugestões de projetos especialmente para você:
+|We made some ProduceRun Campaigns suggestions especially for you:
 br
 br
 -user.recommended_projects.limit(3).each do |project|
@@ -16,25 +16,25 @@ br
   br
 br
 br
-|Pra não ficar dúvida, aqui vai um passo-a-passo pra utilização dos créditos:
+|Not to be sure, here's a step-by-step instructions for use of credits:
 br
 br
-|1 - #{link_to('Escolher o projeto que quer apoiar;', explore_url)}
+|1 - #{link_to('Choose the project you want to support;', explore_url)}
 br
-|2 - Clicar em Quero apoiar este projeto;
+|2 - Click I want to support this project;
 br
-|3 - Colocar o valor que quer apoiar e selecionar o campo confirmando que você quer usar seus créditos.
+|3 - Place the amount you want to support and select the field confirming that you want to use your credits.
 br
-|4 - Clicar no botão Revisar e realizar pagamento na parte debaixo da tela;
+|4 - Ready! Your support will be confirmed.
 br
-|5 - Pronto! Seu apoio será confirmado =)
-br
-br
-|Caso prefira, você pode pedir o reembolso do seu dinheiro clicando #{link_to("aqui", "#{CatarseSettings[:base_url]}/users/#{user.to_param}#credits")}.  Você conseguirá tirar a maioria das suas dúvidas sobre reembolso #{link_to('nesse artigo', 'http://suporte.catarse.me/hc/pt-br/articles/202365507-Regras-e-funcionamento-dos-reembolsos-estornos')}.
+|5 - Ready! Your support will be confirmed.
 br
 br
-|Se tiver alguma outra dúvida, entre em contato conosco na nossa Central de Suporte: suporte.catarse.me.
+|If you prefer, you can claim a refund of their money by clicking #{link_to("aqui", "#{CatarseSettings[:base_url]}/users/#{user.to_param}#credits")}.  You will be able to take most of your questions about reimbursement #{link_to('nesse artigo', 'http://support.producerun.com')}.
 br
 br
-|Um grande abraço,
-|Equipe do Catarse
+|If you have any other questions, please contact us at our Support Center: support.producerun.com
+br
+br
+|Thanks You,
+|ProduceRun
