@@ -131,11 +131,11 @@ en:
       header_text: Share the link below with your friends and enjoy the moment to
         make fine adjustments to help in your campaign.
     dashboard_posts:
-      title: Write a novelty
-      only_to_backers: I want this novelty is only visible to supporters.
+      title: Write a Campaign Update
+      only_to_backers: I want this campaign update only visible to supporters.
       publish: post new
       discard: discard
-      warning: All published news is sent directly to their supporters by email.
+      warning: All published campaign updates are sent directly to their supporters by email.
       old_posts: old news
     dashboard_project:
       budgets_hint_html: Enter a list of the main items of the budget.
