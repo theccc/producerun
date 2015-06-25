@@ -23,13 +23,13 @@ en:
           other: "%{count} support in term of confirmation."
         edit_reward: edit price option
         new_reward: Sign price option
-        reward_deliver_time: "<b>Estimativa delivery: </b> %{estimate}"
-        reward_title: For %{minimum} or more
+        reward_deliver_time: "<b>Estimated delivery: </b> %{estimate}"
+        reward_title: %{minimum}
     dashboard_user_settings:
       title: Registration and banking Payout Details
       subtitle_html: You need to quickly fill out these details so we can quickly pay you out after a successfull campaign.
       user_data_title: Registration data and address
-      user_data_subtitle_html: We need the data below for the issuance of Tax Notes
+      user_data_subtitle_html: We need the data below for the issuance of tax notes
         for successful projects.
       account_title: bank details
       account_subtitle_html: We need the data below to make a financial transfer for
@@ -44,26 +44,26 @@ en:
         left: remaining
       waiting_funds:
         title: "%{name}, we are processing the final payments."
-        subtitle_html: His campaign was completed in %{expires} and is awaiting confirmation
+        subtitle_html: This campaign was completed in %{expires} and is awaiting confirmation
           slips and payments.
         header: From here your campaign can hit the target or not.
         success: 'A meta a:'
         failed: 'Do not hit the target:'
         good_luck: Good luck!
       successful:
-        title: "%{name}, celebrate you deserve!"
-        subtitle_html: His campaign was successful and now is the time to start working
-          relationship with their supporters!
+        title: "%{name}, congratulations!"
+        subtitle_html: His campaign was successful and now is the time to start
+          talking with their supporters!
         header1: 'And do not forget: Transparency is everything.'
-        transparent_html: Keep informed supporter is to maintain a happy supporter.
+        transparent_html: Keep your buyers informed and happy to have a long time customer.
         header2: 'Be sure to read:'
       rejected:
         title: "%{name} unfortunately was not this time."
         subtitle_html: You sent your campaign for analysis of ProduceRun and we understand
           that it is not according to the site profile.
       online:
-        title: "%{name}, your campaign is in the air!"
-        subtitle_html: Your campaign is in the air and your campaign will end on the
+        title: "%{name}, your campaign is published online!"
+        subtitle_html: Your campaign is published online and your campaign will end on the
           day 23hs59min59s %{date}. Until that day and time you may receive support.
         explanation_html: "<div class='fontsize-base u-marginbottom-40 card card-terciary'>
           22266988645918961 With the project in the air, some information may no longer
@@ -105,7 +105,7 @@ en:
     dashboard_user_about:
       submit: save
       title: Tell us more about you!
-      subtitle: Supporters want to learn more about the campaign directors.
+      subtitle: Supporters want to learn more about the farmers.
       twitter_label: Twitter profile
       twitter_hint: Paste the link to your profile
       other_link_label: Presence on the Internet
@@ -139,9 +139,9 @@ en:
       old_posts: old news
     dashboard_project:
       budgets_hint_html: Enter a list of the main items of the budget.
-      budget_hint_html: How your funds are used?
-      budget_label: Project budget
-      budgets_label: Details of the budget
+      budget_hint_html: Where will you deliver?
+      budget_label: Farmer Notes
+      budgets_label: Details of the delivery.
       start: Tell the story of your campaign!
       start_subtitle: Think in the campaign narrative.
       video_url: Video URL
@@ -170,7 +170,7 @@ en:
       url: URL design
       url_label: The address of your campaign. It should be easy to remember.
       category: category
-      category_label: Explore and inspire other campaigns in the same category as yours.
+      category_label: Explore other campaigns in the same category as yours.
       online_days: Deadline for collection
       online_days_label: You can choose between 1 and 60 days for your campaign.
       value: Amount to be raised
