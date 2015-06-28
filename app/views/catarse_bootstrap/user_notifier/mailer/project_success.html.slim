@@ -3,41 +3,41 @@
 - project_link = edit_project_url(project)
 - company_name = CatarseSettings[:company_name]
 
-| Uhuu, #{project.user.name},
+| Hello, #{project.user.name},
 br/
-| Parabéns pela campanha!
-br/
-br/
-| O projeto #{link_to project.name, project_link} foi financiado!
+| Congratulations campaign!
 br/
 br/
-| Depois de comemorar com vontade o término bem sucedido da sua campanha, é hora de voltar ao trabalho!
-'  Reunimos aqui algumas <strong>informações importantíssimas para essa nova etapa!</strong>
+| The campaign #{link_to project.name, project_link} was successfully funded!
 br/
 br/
-| <strong>1</strong> - O valor arrecadado estará disponível na sua conta bancária  até o <strong>dia #{10.weekdays_from(project.expires_at).strftime('%d/%m/%Y')}</strong>
-br/
-| <strong>ATENÇÃO</strong>: Para fazer o repasse utilizaremos as informações cadastrais e bancárias preenchidas na aba Conta do painel de controle do seu projeto. <strong>Certifique-se de que os dados estão corretos</strong>.
-br/
-strong Confira:
-= link_to 'Como será feito o repasse?', 'http://suporte.catarse.me/hc/pt-br/articles/202037493-Como-ser%C3%A1-feito-o-repasse-do-dinheiro-', target: '__blank'
+| 
+' We gather here some <strong>very important information for this new stage !</strong>
 br/
 br/
-| 2 - <strong>Organização é tudo!</strong> Na <strong>aba Relatórios</strong>, baixe planilhas com as <strong>informações sobre os seus apoiadores</strong> e comece a organizar a <strong>entrega das recompensas!</strong> 
+| <strong>1</strong> - The amount collected will be available in your bank account to the <strong>dia #{10.weekdays_from(project.expires_at).strftime('%d/%m/%Y')}</strong>
+br/
+| <strong>Attention</strong>: To make the transfer will use the registration information and bank filled on the tab Control Panel account of your project. <strong> Make sure that the data is correct</strong>.
+br/
+strong Check Out:
+= link_to 'As the transfer will be done?', 'http://support.producerun.com', target: '__blank'
+br/
+br/
+| 2 - <strong>Organization is everything!</strong> Na <strong>Reports tab</strong>, download spreadsheets with <strong>information on their supporters</strong> and start organizing <strong>delivery of goods!</strong> 
 br/
 br/
 = image_tag 'https://s3.amazonaws.com/cdn.catarse/notifications_assets/reports.gif', width: 600
 br/
 br/
-| <strong>3 - Converse com seus apoiadores hoje, amanhã e sempre!</strong> As pessoas demonstraram respeito por você ao te apoiar financeiramente e esperam o mesmo em troca. <strong>A Aba de novidades</strong> ficará disponível para sempre. <strong>Procure fazer postagens de maneira recorrente</strong> mantendo seus apoiadores informados sobre o andamento do projeto. 
+| <strong>3 - Talk to your supporters today, tomorrow and always !</strong> People showed respect for you to support you financially and expect the same in return. <strong> The Aba news </strong > will be available forever. <strong> Try to make posts on a recurring basis </strong> keeping its supporters informed about the progress of the campaign. 
 br/
 br/
 = image_tag 'https://s3.amazonaws.com/cdn.catarse/notifications_assets/post.gif', width: 600
 br/
 br/
-| Se ficou com alguma dúvida, responda a esta mensagem diretamente ou fale conosco através do e-mail #{mail_to CatarseSettings[:email_projects]}. Caso precise falar via telefone estaremos a disposição de segunda à sexta das 14h às 18h no telefone  (11) 98414-0173.
+| If you got any questions, please reply to this message or contact us directly via e- mail #{mail_to CatarseSettings[:email_projects]}. If you need to talk via phone we will be available Monday to Friday from 9am to 6pm CST at (1) 319 640 7002.
 br/
 br/
-| Um abraço apertado de parabéns!
+| Well done again on a running a successful ProduceRun campaign!
 br/
-| A equipe do #{company_name} está vibrando com você!!!!
+| The #{company_name} Team
