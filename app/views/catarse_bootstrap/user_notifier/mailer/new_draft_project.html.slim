@@ -1,31 +1,31 @@
 - project = @notification.project
-| Solicitação de análise do projeto: #{project.name}
+| Design review request: #{project.name}
 br/
-| Frase de efeito: #{project.headline}
+| Catchphrase: #{project.headline}
 br/
-| Tempo de preparo: #{distance_of_time_in_words(project.created_at, project.sent_to_analysis_at)}
+| Preparation time: #{distance_of_time_in_words(project.created_at, project.sent_to_analysis_at)}
 br/
 br/
-strong SOBRE O PROJETO
+strong ABOUT THE CAMPAIGN
 br/
 br/
 | Link: #{link_to project_by_slug_url(project.permalink), project_by_slug_url(project.permalink)}
 br/
-| Categoria: #{link_to project.category, explore_url(anchor: "by_category/#{project.category_id}")}
+| Category: #{link_to project.category, explore_url(anchor: "by_category/#{project.category_id}")}
 br/
-| Valor da meta: #{number_to_currency project.goal}
-br/
-br/
-strong SOBRE O REALIZADOR
+| Goal Value: #{number_to_currency project.goal}
 br/
 br/
-| Nome: #{project.user.full_name}
+strong ABOUT THE FARMER
 br/
-| Apelido: #{project.user.name}
+br/
+| Name: #{project.user.full_name}
+br/
+| Username: #{project.user.name}
 br/
 | Email: #{project.user.email}
 br/
-| Telefone: #{project.user.phone_number}
+| Telephone: #{project.user.phone_number}
 br/
 | Links: 
 br/
@@ -38,16 +38,16 @@ br/
 br/
 = project.user.other_link
 br/
-| Projetos Apoiados: #{project.user.total_contributed_projects}
+| Supported campaigns: #{project.user.total_contributed_projects}
 br/
-| Projetos Financiados: #{project.user.projects.with_state('successful').count}
+| Funded campaigns: #{project.user.projects.with_state('successful').count}
 br/
-| Projetos Não financiados: #{project.user.projects.with_state('failed').count}
+| Campaigns not funded: #{project.user.projects.with_state('failed').count}
 br/
-| Projetos Em Rascunho: #{project.user.projects.with_state('draft').count}
+| Campaigns in Draft: #{project.user.projects.with_state('draft').count}
 br/
-| Projetos Em Análise: #{project.user.projects.with_state('in_analysis').count} 
+| Campaigns in Analysis: #{project.user.projects.with_state('in_analysis').count} 
 br/
-| Projetos Aprovados: #{project.user.projects.with_state('approved').count}
+| Campaigns approved: #{project.user.projects.with_state('approved').count}
 br/
-| Projetos Recusados: #{project.user.projects.with_state('rejected').count} 
+| Rejected campaigns: #{project.user.projects.with_state('rejected').count} 
