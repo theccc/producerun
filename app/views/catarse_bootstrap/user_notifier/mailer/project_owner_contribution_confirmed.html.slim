@@ -4,25 +4,25 @@
 - project_link = project_by_slug_url(permalink: project.permalink)
 - company_name = CatarseSettings[:company_name]
 
-| Olá, <strong>#{project.user.decorate.display_name}</strong>!
+| Hello, <strong>#{project.user.decorate.display_name}</strong>!
 br
 br
-| Hoje seu projeto recebeu #{link_to "#{confirmed_contributions_today.length} novos apoios", project_by_slug_url(permalink: project.permalink, anchor: 'contributions')}, parabéns!
+| Today this campaign was received #{link_to "#{confirmed_contributions_today.length} New Purchase", project_by_slug_url(permalink: project.permalink, anchor: 'contributions')}.
 br/
 br/
-| #{link_to 'Poste uma mensagem para os apoiadores', edit_project_url(project, anchor: 'posts')} e #{link_to 'acompanhe as métricas da sua arrecadação', edit_project_url(project, anchor: 'reports')}!
+| #{link_to 'Post a message to backers', edit_project_url(project, anchor: 'posts')} e #{link_to 'track the metrics of its campaign', edit_project_url(project, anchor: 'reports')}!
 br
 br
-| Mais informações sobre os apoios do dia:
+| More information about the backers of the day:
 br
 br
 table width="500" border="1" cellpadding="10" cellspacing="0" style='font-size: 13px;'
   thead
     tr
-      th width="100" Nome do apoiador
-      th width="100" Email do apoiador
-      th width="100" Valor apoiado
-      th width="200" Recompensa selecionada
+      th width="100" Name of Supporter 
+      th width="100" Email
+      th width="100" Purchase amount
+      th width="200" Selected reward
   tbody
     - confirmed_contributions_today.each do |contribution|
       tr
@@ -32,9 +32,9 @@ table width="500" border="1" cellpadding="10" cellspacing="0" style='font-size: 
         td= contribution.reward.try(:decorate).try(:display_description)
 br/
 br/
-| Lembrando que você pode tirar dúvidas conosco respondendo diretamente a esta mensagem ou através do e-mail #{mail_to CatarseSettings[:email_projects] }
+| Remember that you can ask questions with us directly responding to this message or by e- mail #{mail_to CatarseSettings[:email_projects] }
 br/
 br/
-| Um abraço,
+| Thanks,
 br
 = company_name
