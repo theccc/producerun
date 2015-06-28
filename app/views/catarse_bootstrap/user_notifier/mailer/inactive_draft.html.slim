@@ -1,50 +1,43 @@
 - project = @notification.project
 - project_link = edit_project_url(project)
-|Olá #{project.user.name}, tudo bem? Aqui quem fala é a Luciana do Catarse!
+|Hello #{project.user.name}, It's William Pattison from ProduceRun, how are you?
 br/
 br/
-| Vi que você criou a página de <strong>rascunho</strong> do projeto #{link_to(project.name, project_link)}  mas ainda não nos enviou. Após o envio, a página ficará <strong>em análise</strong> por alguns dias e você será acompanhado por mim ou por outra pessoa da nossa equipe de atendimento.
+| I saw that you created the page <strong>draft</strong> ProduceRun Campaign #{link_to(project.name, project_link)}  but he has not sent us. After sending , the campaign will be <strong>analyzed</strong> for a few days and you will be accompanied by me or another member of our service team .
 br/
 br/
-| Além de revisar as informações sobre a sua campanha, nós vamos te oferecer uma consultoria com dicas e orientações sobre o que melhorar no seu projeto. Quando estiver tudo pronto a página poderá ser <strong>aprovada</strong> e você escolherá o melhor dia para publicá-la no site, iniciando a arrecadação.
+| In addition to reviewing the information about your campaign , we'll offer you a consultation with tips and advice on what to improve in your campaign. When you are ready the page may be <strong>approved</strong> and you choose the best day to post it on the site , starting the campaign .
 br/
 br/
-| Deseja enviar o #{link_to 'seu rascunho de projeto', project_link} para a nossa análise?
+| Want to send the #{link_to 'your project draft', project_link} for our analysis?
 br/
 br/
 = image_tag 'https://s3.amazonaws.com/cdn.catarse/notifications_assets/btn-send-to-analysis.gif', width: 600
 br/
 br/
-strong Lembre-se:
+strong Remember:
 br/
-| Após o envio, todas as informações do seu projeto ainda poderão ser editadas! 
+| After sending all your campaign information can also be edited !
 br/
-| Quando o projeto for aprovado, é você quem escolhe o dia para iniciar sua arrecadação. 
-br/
-br/
-| Se tem alguma dúvida te atrapalhando manda aqui pra mim que eu te ajudo!
+| When the project is approved, it is you who choose the day to start your campaign. 
 br/
 br/
-|Beijo,
+| If you have any questions messing sends you here to me I 'll help you !
+br/
+br/
+|Thanks,
 br/
 strong
-  |Luciana Masini
+  |William Pattison
 br/
-|Catalisadora de projetos criativos
+|Cheif Runner and President of ProduceRun
 br/
 br/
 strong 
-  | P.S - Você quer um tempo para refletir e aprender mais? 
+  | P.S - You want a time to reflect and learn more? 
 br/
-| As dicas fundamentais para estruturar o seu projeto e conduzir sua campanha podem ser encontradas nos nossos diversos canais de informação. Confira abaixo uma lista com links importantes!
+| The key tips to structure and conduct your campaign can be found in our various information channels. Check out a list of important links!
 br/
-| - Para conhecer todas as regras do jogo e tirar dúvidas, acesse a #{link_to 'Central de Suporte', 'http://suporte.catarse.me/hc/pt-br', target: '__blank'}
+| - To learn more and ask questions , go to #{link_to 'ProduceRun Support', 'http://support.producerun.com', target: '__blank'}
 br/
-| - Para se inspirar, leia as editorias de #{link_to 'Historias de projetos', 'http://blog.catarse.me/category/projeto/', target: '__blank'} e #{ link_to 'Dicas de campanha', 'http://blog.catarse.me/category/dicas/', target: '__blank'} do Blog do Catarse
-br/
-| - Para montar uma campanha afiada, confira nosso #{link_to 'Guia dos Realizadores', guides_url(anchor: 'starting'), target: '__blank'}
-br/
-| - Para entender o cenário do financiamento coletivo no brasil, estude a #{link_to 'pesquisa #RFCBr', 'http://pesquisa.catarse.me/', target: '__blank'}
-br/
-| - Para sentir o que seus apoiadores sentirão, #{link_to 'apoie um projeto', explore_url, target: '__blank'}
-
+| - For inspiration , look at other campaigns at #{link_to 'Explore', 'http://www.producerun.com/explore/', target: '__blank'} e #{ link_to 'Campaign Tips', 'http://blog.producerun.com', target: '__blank'} ProduceRun Blog.
