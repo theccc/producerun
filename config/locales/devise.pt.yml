@@ -38,7 +38,7 @@ pt:
     passwords:
       no_token: ''
       #no_token: Você não pode acessar esta página sem estar logado. Se você veio de um email de lembre de senha, por favor certifique-se de ter  digitado a URL corretamente.
-      send_instructions: Acabamos de enviar um email com instruções para redefinir uma nova senha
+      send_instructions: Just send an email with instructions to reset a new password
       send_paranoid_instructions: Se o seu email existir em nosso banco de dados, você receberá um email com um link para recuperação da senha.
       updated: ''
       #updated: Sua senha foi alterada com sucesso
