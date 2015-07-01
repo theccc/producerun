@@ -5,9 +5,10 @@ en:
       blog: Blog
       discover: Explore
       faq: FAQ
-      help: help
-      profile: my data
-      projects: my Projects
+      help: Help
+      about: About
+      profile: My Profile
+      projects: My Campaigns
       signin: Login
       signup: Register
       submit: Start your campaign
