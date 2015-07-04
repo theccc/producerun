@@ -16,7 +16,7 @@ Catarse::Application.routes.draw do
   get '/thank_you' => "static#thank_you"
   #RoutingFilter::Locale.include_default_locale = false
 
-  filter :locale, exclude: /\/auth\//
+  #filter :locale, exclude: /\/auth\//
 
   #mount CatarsePaypalExpress::Engine => "/", as: :catarse_paypal_express
   #mount CatarseMoip::Engine => "/", as: :catarse_moip

@@ -13,7 +13,7 @@ class ApplicationController < ActionController::Base
 
   helper_method :referal_link, :render_projects, :should_show_beta_banner?, :render_feeds
 
-  before_filter :set_locale
+  #before_filter :set_locale
 
   before_action :referal_it!
 
@@ -61,6 +61,9 @@ class ApplicationController < ActionController::Base
     session[:return_to] = nil
     (return_to || root_path)
   end
+  def default_url_options(options={})
+  { :locale => ((I18n.locale == I18n.default_locale) ? nil : I18n.locale) }
+end
 
   def redirect_user_back_after_login
     if request.env['REQUEST_URI'].present? && !request.xhr?
