@@ -23,7 +23,7 @@ module Project::StateMachineHandler
       end
 
       event :send_to_analysis do
-        transition draft: :approved
+        transition draft: :online
       end
 
       event :reject do
