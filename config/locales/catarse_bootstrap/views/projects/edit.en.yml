@@ -81,9 +81,9 @@ en:
         study_title: Felt need to study more to build your campaign?
       approved:
         title: "%{name}, your campaign has been approved!"
-        subtitle_html: To place your campaign in the air, fill
+        subtitle_html: To publish this campaign online, fill
           in the required data in tab %{link1}. It is important to know that we charge
-          the rate of 13% of the total amount collected only for successful projects.
+          the rate of 10% of the total amount collected only for successful ProduceRun Campaigns.
       in_analysis:
         title: "%{name}, you sent your campaign for analysis. You will receive our response
           within 4 working days."
