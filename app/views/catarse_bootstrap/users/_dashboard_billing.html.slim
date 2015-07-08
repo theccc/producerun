@@ -1,70 +1,187 @@
 .w-row
   .w-col.w-col-10.w-col-push-1
     = render 'devise/shared/alert'
-    .w-form.card.card-terciary.u-marginbottom-20
-      .fontsize-base.fontweight-semibold Credit cards
-      .fontsize-small.u-marginbottom-20
-        ' If any campaign that you have supported <b> Credit Card </b> was not successful, we we will make a refund < b> automatically < / b> on the card that you used to make the support .
-      .divider.u-marginbottom-20
-      .w-row.w-hidden-tiny.card
-        .w-col.w-col-5.w-col-small-5
-          .fontsize-small.fontweight-semibold Card
-        .w-col.w-col-5.w-col-small-5
-          .fontweight-semibold.fontsize-small Operator
-        .w-col.w-col-2.w-col-small-2
-      - resource.credit_cards.each do |credit_card|
-        .w-row.card
-          .w-col.w-col-5.w-col-small-5
-            .fontsize-small.fontweight-semibold 
-              | XXXX XXXX XXXX&nbsp;#{credit_card.last_digits}
-          .w-col.w-col-5.w-col-small-5
-            .fontsize-small.fontweight-semibold.u-marginbottom-10
-              = credit_card.card_brand.upcase
-          .w-col.w-col-2.w-col-small-2
-            = link_to 'Remove', user_credit_card_path(resource, credit_card), class: 'btn btn-terciary btn-small', method: :delete, data: { confirm: 'are you sure?' }
+    / .w-form.card.card-terciary.u-marginbottom-20
+    /   .fontsize-base.fontweight-semibold Credit cards
+    /   .fontsize-small.u-marginbottom-20
+    /     ' If any campaign that you have supported <b> Credit Card </b> was not successful, we we will make a refund < b> automatically < / b> on the card that you used to make the support .
+    /   .divider.u-marginbottom-20
+    /   .w-row.w-hidden-tiny.card
+    /     .w-col.w-col-5.w-col-small-5
+    /       .fontsize-small.fontweight-semibold Card
+    /     .w-col.w-col-5.w-col-small-5
+    /       .fontweight-semibold.fontsize-small Operator
+    /     .w-col.w-col-2.w-col-small-2
+    /   - resource.credit_cards.each do |credit_card|
+    /     .w-row.card
+    /       .w-col.w-col-5.w-col-small-5
+    /         .fontsize-small.fontweight-semibold 
+    /           | XXXX XXXX XXXX&nbsp;#{credit_card.last_digits}
+    /       .w-col.w-col-5.w-col-small-5
+    /         .fontsize-small.fontweight-semibold.u-marginbottom-10
+    /           = credit_card.card_brand.upcase
+    /       .w-col.w-col-2.w-col-small-2
+    /         = link_to 'Remove', user_credit_card_path(resource, credit_card), class: 'btn btn-terciary btn-small', method: :delete, data: { confirm: 'are you sure?' }
 
-    = simple_form_for resource, html: { class: 'w-form' } do |f|
-      = hidden_field_tag :anchor, 'billing'
-      .w-form.card.card-terciary
-        = f.simple_fields_for :bank_account do |bform|
-          .fontsize-base.fontweight-semibold Bank details
-          .fontsize-small.u-marginbottom-20
-            | If any campaign that you have supported <b> with bank slip </b> was not successful, we we will make a refund payment <b> automatically </b> to the payment details indicated below.
-          .divider.u-marginbottom-20
+    / = simple_form_for resource, html: { class: 'w-form' } do |f|
+    /   = hidden_field_tag :anchor, 'billing'
+    /   .w-form.card.card-terciary
+    /     = f.simple_fields_for :bank_account do |bform|
+    /       .fontsize-base.fontweight-semibold Bank details
+    /       .fontsize-small.u-marginbottom-20
+    /         | If any campaign that you have supported <b> with bank slip </b> was not successful, we we will make a refund payment <b> automatically </b> to the payment details indicated below.
+    /       .divider.u-marginbottom-20
+    /       .w-row
+    /         .w-col.w-col-6.w-sub-col
+    /           = bform.label :bank_id, class: 'field-label fontweight-semibold force-text-dark'
+    /           = bform.input_field :bank_id, as: :select, collection: Bank.to_collection, class: 'w-select positive'
+    /         .w-col.w-col-6
+    /           .w-row
+    /             .w-col.w-col-6.w-col-small-6.w-col-tiny-6.w-sub-col-middle
+    /               = bform.label :agency, class: 'field-label fontweight-semibold force-text-dark'
+    /               = bform.input_field :agency, as: :string, class: 'positive'
+    /             .w-col.w-col-6.w-col-small-6.w-col-tiny-6
+    /               = bform.label :agency_digit, class: 'field-label fontweight-semibold force-text-dark'
+    /               = bform.input_field :agency_digit, as: :string, class: 'positive'
+    /       .w-row
+    /         .w-col.w-col-6.w-sub-col
+    /           .w-row
+    /             .w-col.w-col-6.w-col-small-6.w-col-tiny-6.w-sub-col-middle
+    /               = bform.label :account, class: 'field-label fontweight-semibold force-text-dark'
+    /               = bform.input_field :account, as: :string, class: 'positive'
+    /             .w-col.w-col-6.w-col-small-6.w-col-tiny-6
+    /               = bform.label :account_digit, class: 'field-label fontweight-semibold force-text-dark'
+    /               = bform.input_field :account_digit, as: :string, class: 'positive'
+    /         .w-col.w-col-6
+    /           = bform.label :owner_name, class: 'field-label fontweight-semibold force-text-dark'
+    /           = bform.input_field :owner_name, as: :string, class: 'positive'
+    /       .w-row
+    /         .w-col.w-col-6.w-sub-col
+    /           = bform.label :owner_document, class: 'field-label fontweight-semibold force-text-dark'
+    /           = bform.input_field :owner_document, as: :tel, class: 'positive'
+    /         .w-col.w-col-6
+    .w-row
+      .w-col-12
+        .fontsize-larger.u-marginbottom-20 Your Payment Methods
+      .w-col-12
+        .fontsize-larger.u-marginbottom-20 Credit Cards
+      .w-col-12
+        .fontsize-bases.u-marginbottom-20 If any campaign that you bought with your Credit Card was not successful, we will make a refund automatically to the card details below.
+    .w-row
+      .w-col-6 
+        .w-row
+          .w-col-12
+            input type="radio"
+              .w-form-label.fontsize-larger.u-marginbottom-20 Credit Cards
+        .w-form
           .w-row
-            .w-col.w-col-6.w-sub-col
-              = bform.label :bank_id, class: 'field-label fontweight-semibold force-text-dark'
-              = bform.input_field :bank_id, as: :select, collection: Bank.to_collection, class: 'w-select positive'
-            .w-col.w-col-6
-              .w-row
-                .w-col.w-col-6.w-col-small-6.w-col-tiny-6.w-sub-col-middle
-                  = bform.label :agency, class: 'field-label fontweight-semibold force-text-dark'
-                  = bform.input_field :agency, as: :string, class: 'positive'
-                .w-col.w-col-6.w-col-small-6.w-col-tiny-6
-                  = bform.label :agency_digit, class: 'field-label fontweight-semibold force-text-dark'
-                  = bform.input_field :agency_digit, as: :string, class: 'positive'
+            .field-label.required Printed Name on the credit card
+            .w-input.text-field 
           .w-row
-            .w-col.w-col-6.w-sub-col
-              .w-row
-                .w-col.w-col-6.w-col-small-6.w-col-tiny-6.w-sub-col-middle
-                  = bform.label :account, class: 'field-label fontweight-semibold force-text-dark'
-                  = bform.input_field :account, as: :string, class: 'positive'
-                .w-col.w-col-6.w-col-small-6.w-col-tiny-6
-                  = bform.label :account_digit, class: 'field-label fontweight-semibold force-text-dark'
-                  = bform.input_field :account_digit, as: :string, class: 'positive'
-            .w-col.w-col-6
-              = bform.label :owner_name, class: 'field-label fontweight-semibold force-text-dark'
-              = bform.input_field :owner_name, as: :string, class: 'positive'
+            .w-col.w-col-8.w-sub-col
+              .field-label.required Card Number
+              .w-input.text-field 
+            .w-col.w-col-4
+              .field-label.required CVV
+              .w-input.text-field
           .w-row
-            .w-col.w-col-6.w-sub-col
-              = bform.label :owner_document, class: 'field-label fontweight-semibold force-text-dark'
-              = bform.input_field :owner_document, as: :tel, class: 'positive'
-            .w-col.w-col-6
 
-      .u-margintop-30
-        .w-container
-          .w-row
-            .w-col.w-col-4.w-col-offset-4
-              = f.submit 'Save',  class:'btn btn-large'
+            .w-col.w-col-8.w-sub-col
+              .field-label.required Expiration Date
+              .w-col.w-col-6.w-sub-col
+                    
+                select.w-col.text-field
+                  option Test 1
+                  option Test 2
+                  option Test 3
+                  option Test 4
+                  option Test 5
+              .w-col.w-col-6
+                select.w-col.text-field
+                  option Test 1
+                  option Test 2
+                  option Test 3
+                  option Test 4
+                  option Test 5
+            .w-col.w-col-4
+              .field-label.required Zip Code
+              .w-input.text-field
+      .w-row
+        .w-col-12
+          .w-col-6.w-sub-col
+            .w-row
+              .w-col-12
+                input type="radio"
+                  .w-form-label.fontsize-larger.u-marginbottom-20 Dwolla Account
+              
+                
+            .w-row
+              .w-col-12
+                .field-label.required Email
+                .w-input.text-field
+       
+          .w-col-6
+            .w-col-12
+                input type="radio"
+                  .w-form-label.fontsize-larger.u-marginbottom-20 PayPal Account
+            .w-row
+              .w-col-12
+                .field-label.required Email
+                .w-input.text-field
+      .w-row.u-marginbottom-40
+        .w-col-6
+          .fontsize-larger.u-marginbottom-20 Receiving Money
+          .fontsize-bases.u-marginbottom-20 If any campaign that you bought with your Credit Card was not successful, we will make a refund automatically to the card details below.
+        .w-row
+          .w-col-12
+            .w-col.w-col-6.w-sub-col
+              .fontsize-larger.u-marginbottom-20 Dwolla Account
+              
+              .field-label.required Email
+              .w-input.text-field
+            .w-col.w-col-6
+              .fontsize-larger.u-marginbottom-20 PayPal Account
+              
+              .field-label.required Email
+              .w-input.text-field
+      .w-row
+        .fontsize-larger.u-marginbottom-20 Bank Details
+        .w-row
+          .w-col-8
+            .w-row
+              .field-label.required Routing Number
+              .w-input.text-field
+            .w-row
+              .field-label.required Checking Account Number
+              .w-input.text-field
+            .w-row
+              .field-label.required Verify Checking Account Number
+              .w-input.text-field
+            .w-row
+              .field-label.required Account Holder
+              .w-input.text-field
+            .w-row
+              .field-label.required Date of Birth
+              .w-input.text-field
+            .w-row
+              .field-label.required Last 4 Digits of Social Security
+              .w-input.text-field
+            .w-row
+              .field-label.required Street Address
+              .w-input.text-field
+            .w-row
+              .field-label.required Zip
+              .w-input.text-field
+            .w-row
+              .field-label.required State
+              .w-input.text-field
+            .w-row
+              .field-label.required Phone
+              .w-input.text-field
+
+        .u-margintop-30 
+            .w-row
+              .w-col.w-col-4.w-col-offset-4
+                .btn.btn-large Save
  
 
