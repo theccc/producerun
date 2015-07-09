@@ -58,7 +58,7 @@ en:
       facebook_link: Facebook profile ( full link )
       other_link: link its website
       change_password: Change my password
-      current_password_hint: "<i>Para the password is changed you need to confirm
+      current_password_hint: "<i>The password is changed you need to confirm
         your password atual.</i>"
       email_hint: Your email is used only to send ProduceRun of communications and
         projects you support .
@@ -87,14 +87,14 @@ en:
         no_projects_current_user_html: You haven't started any campaigns on ProduceRun yet.
           .
         title: "%{name} campaigns"
-        title_current_user: my Projects
+        title_current_user: My Campaigns
       contributions:
         anonymous: Anonymous support.
         no_contributions: "%{name} not backed any campaign yet ."
         no_contributions_current_user_html: You have not backed any campaign.
-        no_reward: You have not selected any reward
-        title: Projects that %{name} has supported
-        title_current_user: Projects already supported
+        no_reward: You have not selected any option
+        title: Campaigns that %{name} has supported
+        title_current_user: Campaigns already supported
         your_reward: your reward
       attention: Heads Up
       tabs:
@@ -107,12 +107,12 @@ en:
         unsubscribes: Notifications
       user_social:
         email: Send me an email
-        facebook: Profile no facebook
-        twitter: Profile no twitter
+        facebook: Facebook Profile
+        twitter: Twitter Profile 
     dashboard:
       contributions:
         support_now: Support now!
-        active_projects: Active projects
-        funded_projects: Projects funded
-        not_funded_projects: Projects not funded
+        active_projects: Active campaigns
+        funded_projects: Campaigns funded
+        not_funded_projects: Campaigns not funded
         no_contribuitions: You haven't bought from a ProduceRun Campaign Yet, its not to late, start today...
