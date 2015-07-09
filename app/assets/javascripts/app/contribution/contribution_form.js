@@ -3,7 +3,7 @@ App.views.Contribution.addChild('ContributionForm', _.extend({
 
   clickReward: function(event){
     var option = this.$(event.currentTarget);
-    this.selectReward(option);
+    this.selectOption(option);
     this.value.val(this.reward().minimum_value);
   },
 
