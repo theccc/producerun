@@ -11,7 +11,7 @@ en:
           may be refused by the team of curators ."
         permalink: Url design
         permalink_hint: URL is the address of your campaign , let it simple.
-        permalink_over: "%{channel}.catarse.me/"
+        permalink_over: "%{channel}.producerun.com/"
         name: Project Name
         name_hint: The more direct the better.
         about: History of your campaign and how the money will be used
@@ -22,7 +22,7 @@ en:
           of 140 characters.
         category_id: What is the category of your campaign ?
         category_id_hint: Before sending , explore and inspire other campaigns in the
-          same <a href='%{href}' target='_blank'>categoria</a> .
+          same <a href='%{href}' target='_blank'>category</a> .
         goal: How much you want to raise ?
         goal_hint: Much of the support will come from people close to you so think
           on their ability to mobilize at least 50 % of the value within your network
