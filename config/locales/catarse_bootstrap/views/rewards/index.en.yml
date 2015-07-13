@@ -23,4 +23,4 @@ en:
       edit_reward: edit reward
       new_reward: Sign reward
       reward_deliver_time: "<b>Estimate delivery: </b> %{estimate}"
-      reward_title: %{minimum}
+      reward_title: "%{minimum}"
