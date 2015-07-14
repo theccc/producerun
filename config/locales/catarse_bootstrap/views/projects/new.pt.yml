@@ -5,17 +5,17 @@ pt:
 
       faq:
         titles:
-          support: "Suporte"
-          know_more: "Saiba mais"
+          support: "Support"
+          know_more: "Know more"
 
         links:
-          criteria: "Critérios de seleção"
-          suport_central: "Central de suporte"
-          support_contact: "Entre em contato com a gente"
-          how_it_works: "Como o Catarse funciona?"
-          money: "Como receberei o dinheiro?"
-          selection: "Como os projetos são selecionados?"
-          all_or_nothing: "Por que Tudo ou Nada?"
+          criteria: "Criteria"
+          suport_central: "Support Central"
+          support_contact: "Support Contact"
+          how_it_works: "How it works?"
+          money: "Money?"
+          selection: "Campaign selection?"
+          all_or_nothing: "All or nothing?"
 
       form:
         blocks:
@@ -26,6 +26,6 @@ pt:
         info:
           permalink: https://producerun.com
           goal: $
-          online_days: dias
+          online_days: days
 
-        submit: "Salvar e continuar"
+        submit: "Submit campaign"
