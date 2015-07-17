@@ -88,33 +88,31 @@
 
         .w-row
           .w-col-12
-            .fontsize-large.u-marginbottom-20 Receiving Money
+            .fontsize-large Receiving Money
+            .fontsize-small.u-marginbottom-20
+              'This is where we'll send the money you collect on ProduceRun.
 
             /.fontsize-small.u-marginbottom-20
               'If any campaign that you bought with your Credit Card was not successful, we will make a refund automatically to the card details below.
 
           .w-form.card.card-terciary.u-marginbottom-20
             .w-row
-              .w-col-12
-
+              .w-col-6.w-col.w-sub-col-middle
                 .fontsize-base.fontweight-semibold.u-marginbottom-20 Dwolla Account
-
-
                 .w-form
                   .w-row
-                    .w-col.w-col-8.w-sub-col-middle
+                    .w-col.w-col-12.w-sub-col-middle
 
                       = bform.label :receiving_dwolla_email_address, class: 'field-label fontweight-semibold force-text-dark' do
                         'Email Address
                       /= bform.input_field :receiving_dwolla_email_address, class: 'w-input text-field positive required'
                       input.w-input.text-field.positive.required
-            .divider.u-marginbottom-20
-            .w-row
-              .w-col-12
+
+              .w-col-6.w-col
                 .fontsize-base.fontweight-semibold.u-marginbottom-20 PayPal Account
                 .w-form
                   .w-row
-                    .w-col.w-col-8.w-sub-col-middle
+                    .w-col.w-col-12.w-sub-col-middle
 
                       = bform.label :receiving_paypal_email_address, class: 'field-label fontweight-semibold force-text-dark' do
                         'Email Address
@@ -155,11 +153,11 @@
                       'Date of Birth
                     .w-row
                       .w-col-4.w-col.w-sub-col
-                        = select_month nil, { prompt: 'MM', use_two_digit_numbers: true }, {name: nil, class: 'w-select positive required'}
+                        = select_month nil, { prompt: 'MM', use_two_digit_numbers: true, prefix: 'date_of_birth' }, {name: nil, class: 'w-select positive required'}
                       .w-col-4.w-col.w-sub-col
-                        = select_day nil, { prompt: 'DD' }, {name: nil, class: 'w-select positive required'}
+                        = select_day nil, { prompt: 'DD', prefix: 'date_of_birth' }, {name: nil, class: 'w-select positive required'}
                       .w-col-4.w-col
-                        = select_year nil, { start_year: Date.today.year-100, end_year: Date.today.year, prompt: 'YYYY' }, {name: nil, class: 'w-select positive required'}
+                        = select_year nil, { start_year: Date.today.year-100, end_year: Date.today.year, prompt: 'YYYY', prefix: 'date_of_birth' }, {class: 'w-select positive required'}
                   .w-col-6.w-col
                     .w-row
                       = bform.label :account_holder, class: 'field-label fontweight-semibold force-text-dark' do
@@ -188,9 +186,9 @@
                       'Phone Number
                     input.w-input.text-field.positive.required
 
-            .u-margintop-30
-                .w-row
-                  .w-col.w-col-4.w-col-offset-4
-                    .btn.btn-large Save
+        .u-margintop-30
+            .w-row
+              .w-col.w-col-4.w-col-offset-4
+                = bform.submit value: 'Save', class: 'btn btn-large' do
 
 
