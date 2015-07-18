@@ -24,13 +24,13 @@
         | About
 
       = link_to '#settings', id: 'dashboard_settings_link', class: 'dashboard-nav-link ' , data: {target: '#dashboard_settings' } do
-        | Access data
+        | Access Data
       
       = link_to '#notifications', id: 'dashboard_notifications_link', class: 'dashboard-nav-link ' , data: {target: '#dashboard_notifications' } do
         | Notifications
 
       = link_to '#billing', id: 'dashboard_billing_link', class: 'dashboard-nav-link ' , data: {target: '#dashboard_billing' } do
-        | Bank and cards
+        | Bank and Cards
 
       = link_to user_path(resource), class: 'dashboard-nav-link u-right-big-only' do
         | Skip to public profile
@@ -70,6 +70,7 @@
           #dashboard_notifications.content.w-hidden
             = render 'dashboard_notifications'
           #dashboard_billing.content.w-hidden
+            .tab-loader.loader.u-text-center.w-col.w-col-12.u-marginbottom-30 = image_tag "catarse_bootstrap/loader.gif"
             = render 'dashboard_billing'
 
 = render 'shared/footer_big'
