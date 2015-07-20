@@ -536,6 +536,7 @@ p {
   padding-left: 15px;
   border-bottom: 1px solid rgba(37, 49, 57, 0.6);
   background-color: #3f4752;
+  min-height: 75px;
 }
 .main-header.overlayer {
   position: relative;
@@ -560,7 +561,7 @@ p {
   position: static;
   display: inline;
   height: 50px;
-  margin: 0px 6px 0px -13px;
+  margin: 10px 0 0;
   float: left;
   clear: none;
 }
@@ -1684,11 +1685,18 @@ p {
   position: relative;
   z-index: 15;
   width: 95px;
-  margin-top: -10px;
+  margin-top: 10px;
   margin-right: 0px;
   float: right;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
+
+  > .dropdown-list.user-menu.w--open {
+    background: #fff;
+    box-shadow: rgba(81, 81, 81, 0.1) 1px 8px 10px 0;
+    border-radius: 0 0 6px 6px;
+    margin-top: 11px;
+  }
 }
 .dropdown-link {
   -webkit-transition: all 500ms ease;
