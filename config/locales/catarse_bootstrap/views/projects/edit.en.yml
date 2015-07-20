@@ -101,6 +101,9 @@ en:
       preview_tab: Preview
       send: send
       publish: publish
+      form:
+        info:
+          permalink: https://producerun.com/
     dashboard_user_about:
       submit: save
       title: Tell us more about you!
@@ -176,3 +179,5 @@ en:
       value_secondary: Plan a consistent goal with your campaign proposes.
       form:
         submit: save
+        info:
+          permalink: https://producerun.com/
