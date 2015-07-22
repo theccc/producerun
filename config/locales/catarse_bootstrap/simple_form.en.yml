@@ -26,7 +26,7 @@ en:
         account: What is the account number?
         account_digit: What is the check digit?
         owner_name: Enter a name with a minimum of 5 and a maximum of 30 letters
-        owner_document: Enter a CPF or CNPJ valid for the account holder
+        owner_document: Enter a valid SSN/EIN for the account holder
       contribution:
         payer_name: Please type the name of supporter
         payer_email: Please enter a valid email address
