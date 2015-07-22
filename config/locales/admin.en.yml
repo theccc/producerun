@@ -32,7 +32,7 @@ en:
         details:
           name: corporate name
           bank_data: Bank details
-          document: CPF / CNPJ
+          document: Tax
           email: E -mail
           state_inscription: inscription state
           address: address
@@ -49,18 +49,18 @@ en:
         between_expires_at: expire between
         between_online_date: Entered the air between
         between_updated_at: updated between
-        by_user_email: Email the director
+        by_user_email: Email the farmer
         id: ID
         name: Title
         send_to_trash: delete
-        send_to_draft: Tell DRAFT !
-        reject: Turn Up One'S Nose At!
+        send_to_draft: Send to DRAFT !
+        reject: Reject!
         approve: Approve !
         user_id: User ID
         goal: where
         total_contributions: supports
-        online_date: Went on the air
-        pledged: reached
+        online_date: Published Online
+        pledged: Goal reached
         recommended: Recommended ?
         state: state
         no_projects: No campaigns found
@@ -242,12 +242,12 @@ en:
           between_expires_at: expire between
           between_online_date: Entered the air between
           between_updated_at: updated between
-          by_user_email: Email the director
+          by_user_email: Email the farmer
           id: ID
           name: Title
           send_to_trash: delete
           send_to_draft: Tell DRAFT !
-          reject: Turn Up One'S Nose At!
+          reject: Reject!
           approve: Approve !
           user_id: User ID
           goal: where
