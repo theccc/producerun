@@ -4,18 +4,18 @@ puts 'Seeding the database...'
 
 # if you change categories, please update on app/views/projects/new.html.slim page also
 [
-  { pt: 'Opt1', en: 'Bundles' },
-  { pt: 'Opt2',en: 'Produce' },
-  { pt: 'Opt3',en: 'Eggs & Dairy' },
-  { pt: 'Opt4',en: 'Meat & Fish' },
-  { pt: 'Opt5',en: 'Bakery' },
-  { pt: 'Opt6',en: 'Pantry' },
-  { pt: 'Opt7',en: 'Snacks' },
-  { pt: 'Opt8',en: 'Drinks' },
-  { pt: 'Opt9',en: 'Floral & Home' },
-  { pt: 'Opt10',en: 'Prepared Foods' },
-  { pt: 'Opt11',en: 'CSA' },
-  { pt: 'Opt12',en: 'Misc' },
+  { pt: 'Bundles', en: 'Bundles' },
+  { pt: 'CSA',en: 'CSA' },
+  { pt: 'Fruit & Vegetables',en: 'Fruit & Vegetables' },
+  { pt: 'Eggs & Dairy',en: 'Eggs & Dairy' },
+  { pt: 'Meat & Fish',en: 'Meat & Fish' },
+  { pt: 'Bakery',en: 'Bakery' },
+  { pt: 'Pantry',en: 'Pantry' },
+  { pt: 'Snacks',en: 'Snacks' },
+  { pt: 'Drinks',en: 'Drinks' },
+  { pt: 'Floral & Home',en: 'Floral & Home' },
+  { pt: 'Prepared Foods',en: 'Prepared Foods' },
+  { pt: 'Misc',en: 'Misc' },
 
 ].each do |name|
    category = Category.find_or_initialize_by(name_pt: name[:pt])
@@ -50,7 +50,7 @@ puts 'Seeding the database...'
   terms_url: 'http://support.producerun.com/',
   privacy_url: 'http://support.producerun.com/',
   about_channel_url: 'http://blog.producerun.com',
-  instagram_url: 'http://instagram.com/producerun_',
+  instagram_url: 'http://instagram.com/producerun',
   blog_url: "http://blog.producerun.com",
   farmers_blog_url: "http://farmers.producerun.com",
   github_url: 'http://github.com/producerun',
