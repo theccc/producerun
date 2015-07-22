@@ -1,45 +1,45 @@
 pt:
   admin: &admin
     filter:
-      title: 'Filtros'
-    confirm_dialog: 'Você tem certeza?'
+      title: 'Filters'
+    confirm_dialog: 'Are you sure?'
     financials:
       index:
         id: ID
-        name: 'Titulo'
-        user: 'Usuário MoIP'
+        name: 'Name'
+        user: 'User MoIP'
         user_id: 'User ID'
-        goal: 'Meta'
-        total_payment_service_fee: 'Taxa do MP'
-        total_catarse_fee: 'Taxa do Catarse'
-        zero_fee: 'Apoio sem taxa?'
-        repass_value: 'Vl. Repasse'
-        expires_at: 'Finaliza'
-        online_date: 'Entrou no ar'
-        pledged: 'Alcançado'
-        recommended: 'Recomendado?'
-        state: 'Estado'
-        menu: 'Rel. Financeiros'
-        title: 'Relatórios financeiros'
-        contribution_report: "Relatório de apoiadores"
-        search_report: "Relatório da busca"
-        total_projects: 'projetos'
-        submit: 'filtrar'
-        by_state: 'Por estado'
-        between_expires_at: 'Expiram entre'
-        by_progress: Por progresso %
+        goal: 'Goal'
+        total_payment_service_fee: 'Total payment service fee'
+        total_catarse_fee: 'Total ProduceRun Fee'
+        zero_fee: 'Support no charge?'
+        repass_value: 'VI . transfer'
+        expires_at: 'Finalized'
+        online_date: 'Online date'
+        pledged: 'Pledged'
+        recommended: 'Recomended?'
+        state: 'State'
+        menu: 'Rel . Financial'
+        title: 'Financial Reports'
+        contribution_report: "Supporters Report"
+        search_report: "Search report"
+        total_projects: 'Campaigns'
+        submit: 'Submit'
+        by_state: 'By state'
+        between_expires_at: 'They expire between'
+        by_progress: for progress %
         details:
-          name: 'Razão social'
-          bank_data: 'Dados bancarios'
-          document: 'CPF / CNPJ'
+          name: 'Name'
+          bank_data: 'Bank'
+          document: 'Tax'
           email: 'E-mail'
-          state_inscription: 'Incrição estadual'
-          address: 'Endereço'
-          phone_number: 'Telefone'
-          permalink: 'Permalink do projeto'
+          state_inscription: 'State inscription'
+          address: 'Address'
+          phone_number: 'Phone'
+          permalink: 'Campaign Permalink'
     projects:
       index:
-        with_state: 'Por estado'
+        with_state: 'With State'
         by_category: 'Por categoria'
         project: 'Projeto'
         user: 'Usuário'
