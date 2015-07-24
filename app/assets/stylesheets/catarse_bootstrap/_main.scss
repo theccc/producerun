@@ -52,6 +52,27 @@ p {
   color: white;
   text-align: center;
   text-decoration: none;
+
+  &.btn-ib {
+    display: inline-block;
+    width: auto;
+  }
+
+  &.bootstrap-color-swatch.red-note {
+    background-color: darken(#e86666, 5);
+    border-color: darken(#e86666, 7);
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    height: auto;
+    width: auto;
+
+    &:hover {
+      background-color: darken(#e86666, 7);
+      border-color: darken(#e86666, 7);
+      box-shadow: 0 0 0;
+    }
+  }
 }
 .btn:hover {
   border-color: #65bf1b;
@@ -164,6 +185,13 @@ p {
 .bootstrap-color-swatch.red-note {
   background-color: #e86666;
 }
+.bootstrap-color-swatch.red-note {
+  background-color: #e86666;
+
+  &.bordered {
+    border-color: darken(#e86666, 5);
+  }
+}
 .bootstrap-color-swatch.blue-light {
   background-color: rgba(64, 155, 255, 0.09);
   color: #3f4752;
@@ -250,7 +278,7 @@ p {
   border-color: #ddd;
 }
 .text-field.error {
-  margin-bottom: 5px;
+//  margin-bottom: 5px;
   border-color: #e86666;
   background-color: rgba(232, 102, 102, 0.09);
 }
@@ -491,9 +519,21 @@ p {
   padding: 0px;
   float: right;
   opacity: 0.5;
+  cursor: pointer;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
+.icon-close-2 {
+  padding: 0;
+  opacity: 0.5;
+  position: absolute;
+  right: 25px;
+  top: 15px;
+  cursor: pointer;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  cursor: pointer;
+ }
 .icon-close:hover {
   opacity: 1;
 }
@@ -1956,6 +1996,9 @@ p {
 }
 .u-marginbottom-10 {
   margin-bottom: 10px;
+}
+.u-marginbottom-0 {
+  margin-bottom: 0;
 }
 .u-radius {
   border-radius: 5px;

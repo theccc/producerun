@@ -100,9 +100,14 @@ class ProjectDecorator < Draper::Decorator
       end
 
       unless error_messages.blank?
-        content_tag(:div, class: 'card card-error u-radius zindex-10 u-marginbottom-30') do
-          content_tag(:div, I18n.t('failure_title'), class: 'fontsize-smaller fontweight-bold u-marginbottom-10') +
-          error_messages.html_safe
+        content_tag(:div, class: 'card card-error u-radius zindex-10 u-marginbottom-30 alert u') do
+          image_tag( 'catarse_bootstrap/x.png', class: 'icon-close-2', width: '12', data: { dismiss: 'alert' } ) +
+              content_tag(:div, I18n.t('failure_title'), class: 'fontsize-smaller fontweight-bold u-marginbottom-10') +
+              error_messages.html_safe
+          # = image_tag 'catarse_bootstrap/x.png', class: 'icon-close', width: '12'
+          # content_tag(:a, href: '#', class: 'btn bootstrap-color-swatch red-note u-margintop-20 u-marginbottom-0', data: { dismiss: 'alert' } ) do
+          #   I18n.t('dismiss_error_messages')
+          # end
         end
       end
     end

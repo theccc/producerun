@@ -4,6 +4,7 @@ en:
   days: days
   facebook_locale: en
   failure_title: 'Please correct the following errors :'
+  dismiss_error_messages: 'Hide this'
   i_just_contributed: I just support the campaign %{name} in ProduceRun
   'no': Do Not
   'yes': Sim

@@ -14,11 +14,12 @@
       .w-container
         .w-col.w-col-8.u-marginbottom-30
           = @project.display_errors(:user_settings)
-          .w-form.card.card-terciary
+
+          .fontsize-base.fontweight-semibold= t('.user_data_title')
+          .fontsize-small.u-marginbottom-20= t('.user_data_subtitle_html')
+
+          .w-form.card.card-terciary.u-marginbottom-30
             #email-form
-              .fontsize-base.fontweight-semibold= t('.user_data_title') 
-              .fontsize-small.u-marginbottom-20= t('.user_data_subtitle_html') 
-              .divider.u-marginbottom-20
               .w-row
                 .w-col.w-col-6.w-sub-col
                   = form.hidden_field :project_id, value: @project.id
@@ -65,10 +66,11 @@
                     .w-col.w-col-6.w-col-small-6.w-col-tiny-6
                       = form.input :phone_number, as: :string, 
                       input_html: { class: 'positive', required: true }
+
+          .fontsize-base.fontweight-semibold= t('.account_title')
+          .fontsize-small.u-marginbottom-20= t('.account_subtitle_html')
+
           .w-form.card.card-terciary
-            .fontsize-base.fontweight-semibold= t('.account_title')
-            .fontsize-small.u-marginbottom-20= t('.account_subtitle_html')
-            .divider.u-marginbottom-20
             .w-row
               .w-col.w-col-6.w-sub-col
                 = form.input :bank_id, as: :select, collection: Bank.to_collection, class: 'w-select positive', 
