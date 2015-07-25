@@ -1,18 +1,14 @@
 = render 'shared/header_big', overlayer: true
 
-.hero-back.hero-full
-  .w-container
-    .w-row.u-text-center
-      .w-col.w-col-2
-      .w-col.w-col-10
-        .fontweight-semibold.u-marginbottom-20.fontsize-jumbo= t('Call dibs on high quality, farm-fresh food today') 
-        .fontsize-large.lineheight-tight.u-marginbottom-30= t('Join your community and buy direct from local farmers.')
-        .w-row
-          .w-col.w-col-3
-          .w-col.w-col-6
-            = link_to t('.back_a_project'), explore_path(ref: 'home_banner_explore'), class: 'btn btn-large'
-          .w-col.w-col-3
-      .w-col.w-col-2
+.hero-container
+  .hero-image style="background-image: url(#{random_image})"
+  .hero-text.v-align.u-text-center
+    .fontweight-semibold.u-marginbottom-20.fontsize-jumbo.hero-big-text= t('Call dibs on high quality, farm-fresh food today')
+    .fontsize-large.lineheight-tight.u-marginbottom-30= t('Join your community and buy direct from local farmers.')
+    .w-col.w-col-6.w-col-offset-3.w-col-tiny-12.w-col-tiny-pull-3
+      = link_to t('.back_a_project'), explore_path(ref: 'home_banner_explore'), class: 'btn btn-large'
+  /video.hero-video autoplay="autoplay" loop="loop" preload="auto" poster="/assets/producerun/hero-01.jpg"
+    source src="https://s3.amazonaws.com/producerun/PR+PROMO.mp4" type="video/mp4"
 
 - if current_user && @projects_near.present?
   .section.u-marginbottom-40

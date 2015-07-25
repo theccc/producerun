@@ -154,6 +154,43 @@ select.date
   background-position: 50% 50%
   background-size: cover
 
+.hero-image
+  position: absolute
+  z-index: 10
+  opacity: 0.7
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background: no-repeat center center
+  -webkit-background-size: cover
+  background-size: cover
+  overflow: hidden
+
+
+
+.hero-container
+  background-color: #222
+  overflow: hidden
+  position: relative
+
+  @media (min-width: 991px)
+    height: 600px
+
+  .hero-text
+    position: relative
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 20
+    color: #fff
+    text-shadow: 0 0 15px rgba(0,0,0,0.5)
+    letter-spacing: 1px
+    width: 50%
+
+  .hero-big-text
+    letter-spacing: 2px
+
 // Helpers
 
 .fontsize-tiny
@@ -167,6 +204,9 @@ select.date
 
 .u-pos-fix
   position: fixed
+
+.u-text-uppercase
+  text-transform: uppercase
 
 // Sprites: Payment
 @import "compass/utilities/sprites"

@@ -6,6 +6,8 @@ class ApplicationController < ActionController::Base
   include Concerns::AnalyticsHelpersHandler
   include Pundit
 
+  include ApplicationHelper
+
   layout 'catarse_bootstrap'
   protect_from_forgery
 
