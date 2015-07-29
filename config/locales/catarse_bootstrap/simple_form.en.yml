@@ -31,12 +31,19 @@ en:
         payer_name: Please type the name of supporter
         payer_email: Please enter a valid email address
         payer_document: Please enter a valid CPF or CNPJ
+        address_line_1: Enter the address line 1. This usually your house number and street name
+        address_line_2: Enter the address line 2
         address_state: Select a state
         address_street: Enter the street name
         address_number: Enter the address number
         address_city: Enter the city name
         address_zip_code: Enter the zip code
         address_phone_number: Enter the phone number
+        card_name: Enter the card name
+        card_number: Enter the card number
+        card_cvv: Enter the card CVV
+        card_zip_code: Enter the card zip code
+
     prompts:
       project:
         category: Select a category

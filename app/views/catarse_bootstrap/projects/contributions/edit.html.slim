@@ -9,12 +9,16 @@
     .w-row
       .w-col.w-col-8
         = simple_form_for [@project, @contribution], html: { data: { update_info_path: project_contribution_path(project_id: @contribution.project.id, id: @contribution.id, format: :json) }, id: 'review_form', method: 'put' } do |form|
+          /= @project.inspect
+          /= @contribution.inspect
           = form.input :id, as: :hidden, label: false
           = form.input :project_id, as: :hidden, label: false
           .u-marginbottom-30.u-text-center-small-only
 
             .fontsize-large.fontweight-semibold.lineheight-tight.text-success-small-only Complete and review the data for payment
-            .w-hidden-tiny.fontsize-small This data is reported to the project director
+            .fontsize-small
+              /.payment-lock.payment-icon-lock
+              /'This payment is secure
 
           #error-message.card.card-error.u-radius.zindex-10.u-marginbottom-30.w-hidden
             .fontsize-smaller.fontweight-bold.u-marginbottom-10= t('.review_errors_title')
@@ -22,40 +26,25 @@
           .w-hidden-main.w-hidden-medium.w-clearfix
             = render 'selected_reward'
           .w-row
-            .w-col-1
             .w-col-10
-              .fontsize-small This Payment is secure
-          .w-form.formwrapper
+          .w-form.u-marginbottom-30
             - if parent.using_pagarme?
               .w-row
-                = form.input :payer_name, as: :string, wrapper_html: {class: 'w-col w-col-12'}, input_html: {required: true}, validation_text: true, required: true
+                = form.input :payer_name, as: :string, wrapper_html: {class: 'w-col w-col-12'}, input_html: {required: true, class: 'w-input text-field required'}, validation_text: true, required: true
               .w-row
-                .field-label.required Company
-                .w-input.text-field 
+                / TODO: This is a dummy form data
+                = form.input :payer_company_name, as: :string, wrapper_html: {class: 'w-col w-col-12'}, input_html: {class: 'w-input text-field'}
               .w-row
-                .field-label.required Street Address 1
-                .text-field
+                = form.input :address_line_1, as: :string, wrapper_html: {class: 'w-col w-col-12'}, input_html: {required: true, class: 'w-input text-field required'}, validation_text: true, required: true
               .w-row
-                .field-label.required Street Address 2
-                .text-field
+                = form.input :address_line_2, as: :string, wrapper_html: {class: 'w-col w-col-12'}, input_html: {required: true, class: 'w-input text-field required'}, validation_text: true, required: true
               .w-row
-                .w-col.w-sub-col.w-col-6
-                  .field-label.required City
-                  .w-form.text-field.w-input
-                .w-col.w-col-6
-                  .field-label.required State
-                  .w-form.text-field.w-input
+                = form.input :address_city, as: :string, wrapper_html: {class: 'w-col w-col-6 w-col-tiny-12 w-sub-col'}, input_html: {required: true, class: 'w-input text-field required'}, validation_text: true, required: true
+                = form.input :address_state, as: :string, wrapper_html: {class: 'w-col w-col-6 w-col-tiny-12'}, input_html: {required: true, class: 'w-input text-field required'}, validation_text: true, required: true
               .w-row
-                .w-col.w-sub-col.w-col-6
-                  .field-label.required Zip
-                  .w-form.text-field
-                .w-col.w-col-6
-                  .field-label.required Phone
-                  .w-form.text-field
+                = form.input :address_zip_code, as: :string, wrapper_html: {class: 'w-col w-col-6 w-col-tiny-12 w-sub-col'}, input_html: {required: true, class: 'w-input text-field required'}, validation_text: true, required: true
+                = form.input :address_phone_number, as: :string, wrapper_html: {class: 'w-col w-col-6 w-col-tiny-12'}, input_html: {required: true, class: 'w-input text-field required'}, validation_text: true, required: true
 
-              / .w-row
-              /   = form.input :payer_email, as: :email, wrapper_html: {class: 'w-col w-col-6 w-sub-col'}, input_html: {required: true}, validation_text: true, required: true
-              /   = form.input :payer_document, as: :tel, wrapper_html: {class: 'w-col w-col-6'}, validation_text: true, input_html: { data: { :'validate-cpf-cnpj' => true } }
             - else
               .w-row
                 = form.input :payer_name, as: :string, wrapper_html: {class: 'w-col w-col-6 w-sub-col'}, input_html: {required: true}, validation_text: true, required: true
@@ -69,91 +58,28 @@
                 #anonymous-confirmation.card.card-message.u-radius.zindex-10.fontsize-smallest.w-hidden
                   .fontweight-bold = t('.anonymous_confirmation_title')
                   = t('.anonymous_confirmation')
-          .formwrapper
-            .fontsize-base.fontweight-bold.fontcolor-primary.u-marginbottom-20 Choose Payment Method
-            .w-form
-              .w-row
-                .field-label.required Printed Name on the credit card
-                .w-input.text-field 
-              .w-row
-                .w-col.w-col-8.w-sub-col
-                  .field-label.required Card Number
-                  .w-input.text-field 
-                .w-col.w-col-4
-                  .field-label.required CVV
-                  .w-input.text-field
-              .w-row
 
-                .w-col.w-col-8.w-sub-col
-                  .field-label.required Expiration Date
-                  .w-col.w-col-6.w-sub-col
-                    
-                    select.w-col.text-field
-                      option Test 1
-                      option Test 2
-                      option Test 3
-                      option Test 4
-                      option Test 5
-                  .w-col.w-col-6
-                    select.w-col.text-field
-                      option Test 1
-                      option Test 2
-                      option Test 3
-                      option Test 4
-                      option Test 5
-                .w-col.w-col-4
-                  .field-label.required Zip Code
-                  .w-input.text-field
-              .w-row
-                .w-col.w-col-12
-                  
-                    input.input-checkbox-alt type="checkbox"
-                      .w-form-label.fontsize-smallest I want to save my credit card to facilate future purchases
-                  
-              / .w-row
-              /   = form.input :address_street, as: :string, wrapper_html: {class: 'w-col w-col-6 w-sub-col'}, input_html: {data: {required_in_brazil: true}}, validation_text: true
-              /   = form.input :address_number, as: :tel, wrapper_html: {class: 'w-col w-col-small-6 w-col-tiny-6 w-col-3 w-sub-col-middle'}, input_html: {data: {required_in_brazil: true}}, validation_text: true
-              /   = form.input :address_complement, as: :string, wrapper_html: {class: 'w-col w-col-small-6 w-col-tiny-6 w-col-3'}
-              / .w-row
-              /   = form.input :address_neighbourhood, as: :string, wrapper_html: {class: 'w-col w-col-6 w-sub-col'}
-              /   = form.input :address_city, as: :string, wrapper_html: {class: 'w-col w-col-6'}, input_html: {data: {required_in_brazil: true}}, validation_text: true
-              / .w-row
-              /   = form.input :address_state, as: :select, collection: State.array, wrapper_html: {class: 'w-col w-col-6 w-sub-col'}, input_html: {data: {required_in_brazil: true}}, validation_text: true
-              /   = form.input :address_zip_code, as: :tel, wrapper_html: {class: 'w-col w-col-small-6 w-col-tiny-6 w-col-3 w-sub-col-middle'}, input_html: {data: {required_in_brazil: true, fixed_mask: '99999-999'}}, validation_text: true
-              /   = form.input :address_phone_number, as: :tel, wrapper_html: {class: 'w-col w-col-small-6 w-col-tiny-6 w-col-3'}, input_html: {data: {required_in_brazil: true, fixed_mask: '(99) 9999-99999'}}, validation_text: true
-          / .formwrapper
-          /   .fontsize-base.fontweight-semibold.fontcolor-secondary.u-marginbottom-20 Delivery Address
-          /   .w-form
-          /     .w-row
-          /       = form.association :country, as: :select, wrapper_html: {class: 'w-col w-col-6 w-sub-col'}, input_html: {class: 'w-select', required: true}, required: true
-          /     .w-row
-          /       = form.input :address_street, as: :string, wrapper_html: {class: 'w-col w-col-6 w-sub-col'}, input_html: {data: {required_in_brazil: true}}, validation_text: true
-          /       = form.input :address_number, as: :tel, wrapper_html: {class: 'w-col w-col-small-6 w-col-tiny-6 w-col-3 w-sub-col-middle'}, input_html: {data: {required_in_brazil: true}}, validation_text: true
-          /       = form.input :address_complement, as: :string, wrapper_html: {class: 'w-col w-col-small-6 w-col-tiny-6 w-col-3'}
-          /     .w-row
-          /       = form.input :address_neighbourhood, as: :string, wrapper_html: {class: 'w-col w-col-6 w-sub-col'}
-          /       = form.input :address_city, as: :string, wrapper_html: {class: 'w-col w-col-6'}, input_html: {data: {required_in_brazil: true}}, validation_text: true
-          /     .w-row
-          /       = form.input :address_state, as: :select, collection: State.array, wrapper_html: {class: 'w-col w-col-6 w-sub-col'}, input_html: {data: {required_in_brazil: true}}, validation_text: true
-          /       = form.input :address_zip_code, as: :tel, wrapper_html: {class: 'w-col w-col-small-6 w-col-tiny-6 w-col-3 w-sub-col-middle'}, input_html: {data: {required_in_brazil: true, fixed_mask: '99999-999'}}, validation_text: true
-          /       = form.input :address_phone_number, as: :tel, wrapper_html: {class: 'w-col w-col-small-6 w-col-tiny-6 w-col-3'}, input_html: {data: {required_in_brazil: true, fixed_mask: '(99) 9999-99999'}}, validation_text: true
+          .w-row
+            = render 'credit_card_payment', form: form
+
           .w-row.u-marginbottom-40
             .w-col.w-col-push-3.w-col-6
               a#next-step.btn.btn-large href="#payment-engines" Next step
+
         #payment-engines.w-hidden
-          .u-marginbottom-30.u-text-center-small-only
-            .fontsize-large.fontweight-semibold.text-success-small-only= t('.choose_payment')
-            .fontcolor-secondary.fontweight-semibold.fontsize-smallest.fontcolor-secondary
-              span.fa.fa-lock
-              |&nbsp;&nbsp;&nbsp;
-              = t('.choose_payment_subtitle')
+          .fontsize-base.fontweight-bold.fontcolor-primary Choose Payment Method
+          .fontcolor-secondary.fontweight-semibold.fontsize-smallest.u-marginbottom-20
+            span.fa.fa-lock
+            |&nbsp;&nbsp;
+            = t('.choose_payment_subtitle')
+
           #payment-methods.nav-light.u-marginbottom-30[class=(avaiable_payment_engines.size == 1 ? '' : '')]
             - avaiable_payment_engines.each do |engine|
               .nav-tab.nav-tab-light[id=engine[:name] data-target="##{engine[:name]}_payment"]
                 = t("projects.contributions.review.#{engine[:name]}")
-          .tab_content_container
+          .tab_content_container.tab-container
             - avaiable_payment_engines.each do |engine|
-              div[id="#{engine[:name]}_payment" class="payments_type hide" data-path=catarse_braintree.review_braintree_path]
+              div[id="#{engine[:name]}_payment" class="payments_type tab-content hide" data-path=catarse_braintree.review_braintree_path]
                 .results
                   .tab-loader.loader.u-text-center.w-col.w-col-12.u-marginbottom-30 = image_tag "catarse_bootstrap/loader.gif"
       .w-col.w-col-4

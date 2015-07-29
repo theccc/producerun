@@ -19,6 +19,8 @@ en:
         value: Support amount
         reward: selected reward
         edit: edit
+      credit_card_payment:
+        payment_save_card: I want to save my credit card to facilitate future support
       edit:
         payment_slip_disclaimer: If the campaign is not successful , we will refund
           your support.
@@ -45,8 +47,6 @@ en:
         pagarme_warning_html: The ProduceRun is in testing phase of a new means of
           payment that facilitate financial support and the possible repayment of
           the amounts to supporters.
-        payment_save_card: I want to save my credit card to facilitate future support
-          .
         reward_sold_out: This reward is exhausted.
         page-title: Support the %{name}
         credits_preview_html: You own 8459986593193533%{credits}8896836270477074 in

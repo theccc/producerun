@@ -61,6 +61,10 @@ class Contribution < ActiveRecord::Base
 
   attr_protected :state, :user_id
 
+  # TODO: THIS IS A DUMMY ATTRIBUTE/METHOD THAT NEEDS TO BE ADDED UP
+  attr_accessor :payer_company_name, :address_line_1, :address_line_2,
+                :card_name, :card_number, :card_cvv, :card_expiration_date, :card_zip_code, :card_save_info
+
   def self.between_values(start_at, ends_at)
     return all unless start_at.present? && ends_at.present?
     where("value between ? and ?", start_at, ends_at)

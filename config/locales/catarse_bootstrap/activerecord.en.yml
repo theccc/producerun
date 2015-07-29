@@ -42,9 +42,12 @@ en:
         account_digit: digit account
       contribution:
         payer_name: Full Name
+        payer_company_name: Company Name
         payer_email: Email
         payer_document: EIN Number
         country: Country
+        address_line_1: Street Address 1
+        address_line_2: Street Address 2
         address_street: Street
         address_number: Number
         address_complement: Complement
@@ -56,6 +59,12 @@ en:
         value: Support value
         reward: Reward
         project: Campaign
+        card_name: Printed Name on the Credit Card
+        card_name: Card Number
+        card_cvv: CVV
+        card_expiration_date: Expiration Date
+        card_save_data: I want to save my credit card to facilitate future purchase
+
       reward:
         deliver_at: Estimated delivery
       project:
