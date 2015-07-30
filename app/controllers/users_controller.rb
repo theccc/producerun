@@ -34,6 +34,7 @@ class UsersController < ApplicationController
       @unsubscribes = @user.project_unsubscribes
       @credit_cards = @user.credit_cards
       build_bank_account
+      build_bank_card_detail
     }
   end
 
@@ -55,6 +56,7 @@ class UsersController < ApplicationController
     @subscribed_to_posts = @user.posts_subscription
     resource.links.build
     build_bank_account
+    build_bank_card_detail
   end
 
   def update
@@ -63,7 +65,7 @@ class UsersController < ApplicationController
     if update_user
       flash[:notice] = t('users.current_user_fields.updated')
       redirect_to edit_user_path(@user, anchor: params[:anchor])
-    else
+    else      
       render :edit
     end
   end
@@ -79,8 +81,8 @@ class UsersController < ApplicationController
       if @user.update_with_password permitted_params[:user]
         sign_in(@user, bypass: true)
       end
-    else
-      @user.update_without_password permitted_params[:user]
+    else     
+      @user.update_without_password permitted_params[:user]      
     end
   end
 
@@ -131,6 +133,10 @@ class UsersController < ApplicationController
 
   def build_bank_account
     @user.build_bank_account unless @user.bank_account
+  end
+
+  def build_bank_card_detail
+    @user.build_bank_card_detail unless @user.bank_card_detail
   end
 
   def permitted_params

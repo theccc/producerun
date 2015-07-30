@@ -33,6 +33,7 @@ class UserPolicy < ApplicationPolicy
     u_attrs << record.attribute_names.map(&:to_sym)
     u_attrs << { links_attributes: [:id, :_destroy, :link] }
     u_attrs << { category_followers_attributes: [:id, :user_id, :category_id] }
+    u_attrs << { bank_card_detail_attributes: [:card_holder_name,:card_number,:card_cvv,:card_expire_month,:card_expire_year,:zip_code,:dwolla_email_address,:paypal_email_address,:receiving_dwolla_email_address,:receiving_paypal_email_address,:bank_routing_number,:checking_account_number,:account_holder,:bank_dob,:bank_ss_number,:street_address,:state,:card_zip_code,:phone_number,:checking_account_number_confirmation]}
     u_attrs.flatten!
 
     unless user.try(:admin?)
