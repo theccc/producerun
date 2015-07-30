@@ -36,7 +36,7 @@ class RewardDecorator < Draper::Decorator
           <label class="field-label">
             qty
           </label>
-          <input id="produce_qty_#{source.id}" name="produce_qty" class="w-input text-field positive required produce-qty" required="required" type="number" min="1" max="#{source.maximum_contributions.to_i}" value ="1"/>
+          <input id="produce_qty_#{source.id}" name="produce_qty" class="w-input text-field positive required produce-qty" required="required" type="number" min="1" #{source.maximum_contributions.to_i > 0 ? "max='#{source.maximum_contributions.to_i}'" : "" } value ="1"/>
           <div class="fontsize-smaller text-error u-marginbottom-20 fa fa-exclamation-triangle w-hidden" data-error-for="produce_qty">Please enter how many pieces do you want.</div>
         </div>
       </div>
