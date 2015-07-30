@@ -8,6 +8,7 @@ en:
       contribution: Sketchpad
       category: category
       bank_account: bank details
+      bank_card_detail: bank And card Details
     attributes:
       project_account:
         address_city: City
@@ -40,6 +41,26 @@ en:
         agency_digit: digit agency
         account: Account No.
         account_digit: digit account
+      bank_card_detail:
+        card_holder_name: Card Holder Name
+        card_number: Card Number
+        cvv: Card CVV
+        card_expire_month: Expiration Month
+        card_expire_year: Expiration Year
+        zip_code: Zip Code
+        dwolla_email_address: Dwolla Email Address
+        paypal_email_address: Paypal Email Address
+        receiving_dwolla_email_address: Dwolla Email Address
+        receiving_paypal_email_address: Paypal Email Address
+        checking_account_number: Checking Routing Number
+        checking_account_number_confirmation: Verify Checking Routing Number        
+        account_holder: Account Holder
+        bank_dob: Date Of Birth
+        bank_ss_number: Bank SS Number
+        bank_street_address: Stree Address
+        bank_state: State
+        bank_zip: Zip
+        bank_phone_number: Phone Number
       contribution:
         payer_name: Full Name
         payer_company_name: Company Name
@@ -150,6 +171,28 @@ en:
             account_digit:
               blank: Account digit can not be blank
               invalid: Digit Invalid agency
+        bank_card_detail:
+          attributes:
+            dwolla_email_address:
+              invalid: Dwolla Email Address invalid
+            paypal_email_address:
+              invalid: Paypal Email Address invalid
+            receiving_dwolla_email_address:
+              invalid: Dwolla Email Address invalid
+            receiving_paypal_email_address:
+              invalid: Paypal Email Address invalid
+            card_number:
+              not_a_number: Card Number is not a number
+            card_cvv:
+              not_a_number: CVV is not a number
+            checking_account_number:
+              not_a_number: Account Number is not a number
+              confirmation: Account Number and Verify Account Number does not match
+            checking_account_number_confirmation:
+              not_a_number: Account Number is not a number
+              confirmation: Account Number and Verify Account Number does not match  
+            bank_ss_number:
+              wrong_length: SS Number should be %{count} characters
         project_account:
           attributes:
             full_name:

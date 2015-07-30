@@ -22,7 +22,7 @@ class User < ActiveRecord::Base
     :image_url, :uploaded_image, :bio, :newsletter, :full_name, :address_street, :address_number,
     :address_complement, :address_neighbourhood, :address_city, :address_state, :address_zip_code, :phone_number,
     :cpf, :state_inscription, :locale, :twitter, :facebook_link, :other_link, :moip_login, :deactivated_at, :reactivate_token,
-    :bank_account_attributes, :country_id, :zero_credits, :links_attributes, :about, :cover_image, :category_followers_attributes, :category_follower_ids
+    :bank_account_attributes,:bank_card_detail_attributes, :country_id, :zero_credits, :links_attributes, :about, :cover_image, :category_followers_attributes, :category_follower_ids
 
   mount_uploader :uploaded_image, UserUploader
   mount_uploader :cover_image, CoverUploader
@@ -41,6 +41,7 @@ class User < ActiveRecord::Base
   belongs_to :country
   has_one :user_total
   has_one :bank_account, dependent: :destroy
+  has_one :bank_card_detail, dependent: :destroy
   has_many :feeds, class_name: 'UserFeed'
   has_many :credit_cards
   has_many :project_accounts
@@ -62,6 +63,7 @@ class User < ActiveRecord::Base
   accepts_nested_attributes_for :unsubscribes, allow_destroy: true rescue puts "No association found for name 'unsubscribes'. Has it been defined yet?"
   accepts_nested_attributes_for :links, allow_destroy: true, reject_if: ->(x) { x['link'].blank? }
   accepts_nested_attributes_for :bank_account, allow_destroy: true, reject_if: -> (attr) { attr[:bank_id].blank? }
+  accepts_nested_attributes_for :bank_card_detail, allow_destroy: true
   accepts_nested_attributes_for :category_followers, allow_destroy: true
 
   scope :with_permalink, -> { where("users.permalink is not null") }
