@@ -54,11 +54,41 @@ select.date
   height: 70px
 
 .back-reward-radio-reward
+  cursor: pointer
+  label
+    cursor: pointer
+  position: relative
+  margin-bottom: 10px !important
+  border: 1px solid #eee
   .badge-success
     display: none
   &.selected
     .badge-success
       display: inline
+      position: absolute
+      top: 10px
+      right: 10px
+
+  .radio_buttons,
+  input[type=radio]
+    height: auto
+    display: inline-block
+    float: none
+
+    + label
+      float: none
+      display: inline-block
+      line-height: 1
+
+.total-card
+  overflow: auto
+  .back-reward-input-reward.placeholder
+    width: 20%
+
+  .contribution-text
+    float: left
+    width: 80%
+
 
 .list-question
   cursor: pointer

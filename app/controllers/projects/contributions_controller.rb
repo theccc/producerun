@@ -75,8 +75,8 @@ class Projects::ContributionsController < ApplicationController
 
   protected
   def load_rewards
-    empty_reward = Reward.new(minimum_value: 0, description: t('projects.contributions.new.no_reward'))
-    @rewards = [empty_reward] + @project.rewards.remaining.order(:minimum_value)
+    # empty_reward = Reward.new(minimum_value: 0, description: t('projects.contributions.new.no_reward'))
+    @rewards = @project.rewards.remaining.order(:minimum_value)
   end
 
   def permitted_params
