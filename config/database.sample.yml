@@ -11,11 +11,11 @@
 development:
   adapter: postgresql
   encoding: unicode
-  host: localhost
-  database: catarse_development
+  host: ec2-54-204-3-188.compute-1.amazonaws.com
+  database: d32p35sjked4g
   pool: 5
-  username: postgres
-  password: password
+  username: dosxczfjtavqxy # <== Change me!!
+  password: FPm-_w8h40ZgPz-rWWC0zNRLB0 # <== Change me too!
 
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -40,11 +40,9 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  host: localhost
-  database: catarse_test
+  host: ec2-54-204-3-188.compute-1.amazonaws.com
+  port: 5432
+  database: d32p35sjked4g
   pool: 5
-  username: postgres
-  password: password
-
-
-
+  username: dosxczfjtavqxy # <== Change me!
+  password: FPm-_w8h40ZgPz-rWWC0zNRLB0 # <== Same here!
