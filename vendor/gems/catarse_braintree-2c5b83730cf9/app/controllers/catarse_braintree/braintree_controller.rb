@@ -4,6 +4,8 @@ class CatarseBraintree::BraintreeController < ApplicationController
   layout :false
 
   def review
+    @contribution = Contribution.find(params[:id])
+    @project = @contribution.project
   end
 
   def charge
@@ -31,6 +33,6 @@ class CatarseBraintree::BraintreeController < ApplicationController
   protected
 
   def gateway
-    @gateway ||= CatarseBraintree::Gateway.instance
+      @gateway ||= CatarseBraintree::Gateway.instance
   end
 end
