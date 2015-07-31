@@ -576,7 +576,11 @@ p {
   padding-left: 15px;
   border-bottom: 1px solid rgba(37, 49, 57, 0.6);
   background-color: #3f4752;
-  min-height: 75px;
+  min-height: 50px;
+
+  @media (min-width: 900px) {
+    min-height: 65px;
+  }
 }
 .main-header.overlayer {
   position: relative;
@@ -600,7 +604,7 @@ p {
 .img-logo.img-logo-bootstrap {
   position: static;
   display: inline;
-  height: 50px;
+//  height: 50px;
   margin: 10px 0 0;
   float: left;
   clear: none;
@@ -610,7 +614,7 @@ p {
   top: 5px;
   right: -73px;
   display: inline-block;
-  margin: 16px 5px 0px 0px;
+  margin: 14px 5px 0px 0px;
   padding: 9px 22px;
   border-radius: 4px;
   -webkit-transition: all 500ms ease;
@@ -619,6 +623,10 @@ p {
   font-size: 15px;
   font-weight: 300;
   text-decoration: none;
+
+  @media (max-width: 414px) and (orientation: portrait) {
+    margin-top: 3px;
+  }
 }
 .header-link:hover {
   position: static;
@@ -1805,8 +1813,7 @@ p {
 }
 .header-logo {
   display: inline-block;
-  width: 256px;
-  max-width: 256px;
+  width: 160px;
   margin-right: 20px;
   margin-left: 0px;
   padding: 0px;
